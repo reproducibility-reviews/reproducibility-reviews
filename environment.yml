@@ -1,0 +1,9 @@
+name: reproducibility-reviews
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - unidecode
+  - bs4
+  - pandas
