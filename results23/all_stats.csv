@@ -1,0 +1,22 @@
+id	category	title	words1	words2	words3
+001	contribution	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	130	140	57
+001	detailed	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	154	174	38
+001	justifictation	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	79	52	28
+001	repro	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	12	161	17
+001	strenghts	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	90	102	14
+001	total		583	788	244
+001	weakness	3D Arterial Segmentation via Single 2D Projections and Depth Supervision in Contrast-Enhanced CT Images	118	159	90
+002	contribution	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	43	51	110
+002	detailed	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	19	169	279
+002	justifictation	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	48	76	136
+002	repro	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	8	52	140
+002	strenghts	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	44	39	265
+002	total		195	458	1165
+002	weakness	3D Dental Mesh Segmentation Using Semantics-Based Feature Learning with Graph-Transformer	33	71	235
+003	contribution	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	64	79	59
+003	detailed	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	66	49	4
+003	justifictation	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	53	4	43
+003	repro	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	6	3	3
+003	strenghts	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	249	11	81
+003	total		504	195	223
+003	weakness	3D Medical Image Segmentation with Sparse Annotation via Cross-Teaching between 3D and 2D Networks	66	49	33
