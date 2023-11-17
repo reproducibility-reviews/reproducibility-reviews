@@ -11,6 +11,7 @@ from extract_reviews_utils import (
     get_repro_copy_paste,
     resume,
     count_checklist,
+    create_rating_tsv,
 )
 
 @click.command(name="extract-reviews", no_args_is_help=True)
@@ -78,6 +79,8 @@ def cli(
     print(f"Count checklist words in repro review")
     count_checklist(df_all_reviews=df_all_reviews, output_directory=output_directory, category="repro")
 
+    print("create ratin tsv file")
+    create_rating_tsv(df_all_reviews, output_directory=output_directory)
 
 if __name__ == "__main__":
     cli()

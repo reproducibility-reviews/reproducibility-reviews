@@ -55,7 +55,7 @@ def extract_reviews(paper, category):
     soup = BeautifulSoup(contenu_web, "html.parser")
 
     paper_title = soup.find("title").get_text().rstrip("MICCAI 2023 - Accepted Papers an").rstrip(' |')
-    paper_id = Path(paper).name[:3]
+    paper_id = Path(paper).name[:13]
     text = list_review_text[category]
     repro_reviews_paragraph = soup.find_all(lambda tag: tag.name == "li" and text in tag.text)
     repro_exact_text = soup.find(lambda tag: tag.name == "strong" and text in tag.text).get_text()
@@ -201,6 +201,26 @@ def count_checklist(df_all_reviews, output_directory, category = "repro"):
 
                 
 
+def create_rating_tsv(df_all_reviews, output_directory):
 
+    df_rating_tsv = pd.read_csv("./template_rating.tsv", sep = "\t", index_col=False,header= None)
 
+    first_line = df_rating_tsv.iloc[0]
+    second_line = df_rating_tsv.iloc[1]
 
+    df_rating_1 = pd.DataFrame([first_line])
+    df_rating_2 = pd.DataFrame([second_line])
+    
+    df_rating = pd.concat([df_rating_1, df_rating_2])
+
+    for id, id_df in df_all_reviews.groupby(level=0):
+        title = str(df_all_reviews.loc[(id, "repro"), "title"])
+        new_row = [id, title]
+        for i in range(1,4):
+            review = str(df_all_reviews.loc[(id, "repro"), f"review{i}"])
+            new_row = new_row + [review] + 8 * [""]
+        new_row = new_row + 12 * [""]
+        df_row = pd.DataFrame([new_row])
+        df_rating = pd.concat([df_rating, df_row])
+
+    df_rating.to_csv(os.path.join(output_directory ,f'rating_repro_reviews.csv'), index = False, header= False ,sep="\t", encoding='utf-8')
