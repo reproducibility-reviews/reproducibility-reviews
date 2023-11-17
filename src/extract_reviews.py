@@ -10,6 +10,7 @@ from extract_reviews_utils import (
     save_hist,
     get_repro_copy_paste,
     resume,
+    count_checklist,
 )
 
 @click.command(name="extract-reviews", no_args_is_help=True)
@@ -41,29 +42,41 @@ def cli(
     if not output_directory.is_dir():
         os.mkdir(output_directory)
 
-    df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list, output_directory)
+    path_all_reviews = Path(output_directory) / 'all_reviews.csv'
+    path_all_stats = Path(output_directory) / 'all_stats.csv'
 
-    df_all_reviews.to_csv(os.path.join(output_directory ,f'all_reviews.csv'), index = False, sep="\t", encoding='utf-8')
-    df_all_stats.to_csv(os.path.join(output_directory ,f'all_stats.csv'), index = False, sep="\t", encoding='utf-8')
+    if (not path_all_reviews.is_file()) or (not path_all_stats.is_file()):
 
-    # for category in list_categories_str:
-    #     df_reviews = pd.read_csv(os.path.join(output_directory ,f'{category}_reviews2.csv'), sep= "\t", index_col=False)
-    #     df_statistics = pd.read_csv(os.path.join(output_directory ,f'{category}_statistics.csv'), sep= "\t", index_col=False)
+        print(f"Extract reviews and count word for year {year}")
+        df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list)
 
-    #     df_all_reviews = pd.concat([df_all_reviews, df_reviews ])
-    #     df_all_stats = pd.concat([df_all_stats, df_statistics ])
+        df_all_reviews.to_csv(path_all_reviews, index = False, sep="\t", encoding='utf-8')
+        df_all_stats.to_csv(path_all_stats, index = False, sep="\t", encoding='utf-8')
+
+    else:
+
+        print(f"Import tsv from {output_directory}")
+        import pandas as pd
+        df_all_reviews = pd.read_csv(path_all_reviews, sep= "\t", index_col=False)
+        df_all_stats = pd.read_csv(path_all_stats, sep= "\t", index_col=False)
+
     
+    print(f"Count total words")
     df_all_stats = count_total_words(df_all_stats=df_all_stats, output_directory=output_directory)
     df_all_reviews.set_index(["id", "category"], inplace= True)
     df_all_reviews.sort_index(level = ['id', 'category'], ascending=True, inplace=True)
 
-    histo_path = Path(output_directory) / "histo"
-    if not histo_path.is_dir():
-        os.mkdir(histo_path)
-    save_hist(df_all_stats, histo_path)
+    print(f"Creating histo")
+    save_hist(df_all_stats, output_directory)
+
+    print(f"Count number of copy/paste")
     get_repro_copy_paste(df_all_reviews=df_all_reviews, output_directory=output_directory)
 
+    print(f"Create stats resume")
     resume(df_all_stats, output_directory=output_directory)
+
+    print(f"Count checklist words in repro review")
+    count_checklist(df_all_reviews=df_all_reviews, output_directory=output_directory, category="repro")
 
 
 if __name__ == "__main__":

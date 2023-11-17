@@ -2,7 +2,6 @@
 
 import click
 from pathlib import Path
-from get_reviews import get_accepted_paper_list, extract
 
 
 @click.command(name="random-reviews", no_args_is_help=True)

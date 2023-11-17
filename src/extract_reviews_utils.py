@@ -85,14 +85,14 @@ def extract_reviews(paper, category):
         statistics.append(len(str(tmp_review).split()))
 
     if len(reviews)==5:
-        reviews.append("N/A")
+        reviews.append("no review")
         statistics.append(0)
     reviews_df = pd.DataFrame([reviews], columns=columns_reviews)
     statistics_df = pd.DataFrame([statistics], columns=columns_statistics)
 
     return reviews_df, statistics_df
 
-def extract_reproducibility_paragraph(paper_list, results_path):
+def extract_reproducibility_paragraph(paper_list):
     # Extract the reproducibility paragraph from the reviews and export as csv file
 
     df_stats =  pd.DataFrame(columns=columns_statistics)
@@ -109,7 +109,11 @@ def extract_reproducibility_paragraph(paper_list, results_path):
     return df_reviews, df_stats
 
 
-def save_hist(df_all_stats, results_path:str):
+def save_hist(df_all_stats, output_directory:str):
+
+    histo_path = Path(output_directory) / "histo"
+    if not histo_path.is_dir():
+        os.mkdir(histo_path)
 
     for category in list_categories_str + ["total"] :
         df = df_all_stats.swaplevel()
@@ -123,7 +127,7 @@ def save_hist(df_all_stats, results_path:str):
         plt.ylabel('Frequency')
         plt.legend()
         plt.grid(True)
-        plt.savefig(os.path.join(results_path, f"{category}_hist_count_words"))
+        plt.savefig(os.path.join(histo_path, f"{category}_hist_count_words"))
 
 
 def resume(df_all_stats, output_directory):
@@ -154,7 +158,6 @@ def count_total_words(df_all_stats, output_directory):
         for i in range (1,4):
             df_all_stats.loc[(id,'total'), f"words{i}"] = 0
             for _, category in id_df.index.values:
-                print(df_all_stats)
                 df_all_stats.loc[(id,'total'), f"words{i}"] = df_all_stats.loc[(id,'total'), f"words{i}"] + df_all_stats.loc[(id,category), f"words{i}"]
 
     df_all_stats.sort_index(level = ['id', 'category'], ascending=True, inplace=True)
@@ -182,10 +185,22 @@ def get_repro_copy_paste(df_all_reviews, output_directory, threshold:int  = 10 )
 
 
 
-def count_checklist():
+def count_checklist(df_all_reviews, output_directory, category = "repro"):
 
-    #TODO
-    pass
+    df_checklist = pd.DataFrame(columns=columns_reviews)
+    df_checklist.set_index(["id", "category"], inplace= True)
+    for id, id_df in df_all_reviews.groupby(level=0):
+        for i in range(1,4):
+            review = str(df_all_reviews.loc[(id, category), f"review{i}"])
+
+            if ("check-list" in review) or ("checklist" in review) or ("check list" in review):
+                df_checklist.loc[(id, category), "title"] = df_all_reviews.loc[(id, category), "title"]
+                df_checklist.loc[(id, category), f"review{i}"] = review
+
+    df_checklist.to_csv(os.path.join(output_directory ,f'nb_checklist_{category}.csv'), index = True, sep="\t", encoding='utf-8')
+
+                
+
 
 
 
