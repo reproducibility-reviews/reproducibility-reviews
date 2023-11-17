@@ -4,6 +4,3 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
-  - unidecode
-  - bs4
-  - pandas

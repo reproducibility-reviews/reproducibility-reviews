@@ -54,7 +54,7 @@ def extract_reviews(paper, category):
     contenu_web = reponse.read().decode('UTF-8')
     soup = BeautifulSoup(contenu_web, "html.parser")
 
-    paper_title = soup.find("title").get_text().rstrip("MICCAI 2023 - Accepted Papers, Reviews, Author Feedback").rstrip(' |')
+    paper_title = soup.find("title").get_text().rstrip("MICCAI 2023 - Accepted Papers an").rstrip(' |')
     paper_id = Path(paper).name[:3]
     text = list_review_text[category]
     repro_reviews_paragraph = soup.find_all(lambda tag: tag.name == "li" and text in tag.text)

@@ -1,0 +1,6 @@
+notebook
+unidecode
+bs4
+pandas
+click
+matplotlib
