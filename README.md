@@ -15,10 +15,10 @@ Colliot O, Thibeau-Sutre E, Brianceau C and Burgos N, Reproducibility in medical
 
 ## Getting started
 
-```bash
-$ conda env create -f environment.yml
-$ conda activate reproducibility-reviews
-$ pip install -r requirements.txt
+```
+conda env create -f environment.yml
+conda activate reproducibility-reviews
+pip install -r requirements.txt
 ```
 
 ## Extracting the reviews
