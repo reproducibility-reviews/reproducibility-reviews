@@ -27,10 +27,10 @@ This task can be run with the following command line:
 ```Text
 python ./src/cli.py extract-reviews [OPTIONS]
 ```
-where:
+where [OPTIONS] can be:
 
-- `year`: (str) the year of the MICCAI conference for which you want to extract the reviews (currently only supports 2022 or 2023, default is 2023).
-- `output_directory`: (Path) the path to the directory where you want to save your results (default is results).
+- `--year, -y`: (str) the year of the MICCAI conference for which you want to extract the reviews (currently only supports 2022 or 2023, default is 2023).
+- `--output_directory, -od`: (Path) the path to the directory where you want to save your results (default is results). 
 
 
 ## Analyzing the ratings
