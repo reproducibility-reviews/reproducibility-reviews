@@ -7,7 +7,7 @@ These results correspond to an analysis of the reproducibility section of the re
 The results were obtained as follows:
 1. automatically extracting the reviews of papers accepted at MICCAI (using the [command-line tool](#Extracting-the-reviews))
 2. human rating of the reviews as described in the paper
-3. analyzing the ratings of these reviews (presented as a Jupyter notebook)
+3. analyzing the ratings of these reviews (presented as a [Jupyter notebook](#Analyzing-the-ratings))
 
 ## Citation
 
@@ -33,7 +33,7 @@ where:
 - `output_directory`: (Path) the path to the directory where you want to save your results (default is results).
 
 
-## Launch the jupyter-notebook 
+## Analyzing the ratings
 
 ## External ressources
 
