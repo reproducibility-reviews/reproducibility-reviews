@@ -1,4 +1,4 @@
-# Reproducibility reviews repo
+# Reproducibility reviews
 
 This repository aims to reproduce the results described in the following paper on "Reproducibility in medical image computing". 
 
