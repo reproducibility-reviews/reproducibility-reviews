@@ -1,0 +1,35 @@
+stat		confidence interval high	confidence interval high	confidence interval high	confidence interval low	confidence interval low	confidence interval low	kappa score	kappa score	kappa score	standard error	standard error	standard error
+method		bootstrap	cohen	fleiss	bootstrap	cohen	fleiss	bootstrap	cohen	fleiss	bootstrap	cohen	fleiss
+category	review												
+Models and algorithms	review 1	1.0			0.6923076923076923			0.919527983519328			0.08234113807340813		
+Models and algorithms	review 2	1.0			0.7252747252747253			0.8912611162791683			0.0743055198866547		
+Models and algorithms	review 3	1.0			0.7142857142857143			0.8886219910848379			0.07859884432974383		
+Datasets	review 1	1.0			0.75			0.8996706642273103			0.06790947650105676		
+Datasets	review 2	1.0			0.7340425531914894			0.8947080345171667			0.0719704094715839		
+Datasets	review 3	1.0			1.0			1.0			0.0		
+Code	review 1	1.0			1.0			1.0			0.0		
+Code	review 2	1.0			0.8			0.9457593303556575			0.056719612758391484		
+Code	review 3	1.0			1.0			1.0			0.0		
+Experimental results	review 1	0.9310344827586207			0.3793749999999999			0.6797067140239137			0.14402223070110273		
+Experimental results	review 2												
+Experimental results	review 3	1.0			0.7523219814241486			0.9332726493545352			0.068834348863701		
+Error bars or statistical significance	review 1												
+Error bars or statistical significance	review 2												
+Error bars or statistical significance	review 3												
+Statement	review 1	0.8468639809131437			0.5030841099307682			0.6847836407457877			0.08889240340115272		
+Statement	review 2	0.880161505161505			0.5285862156021207			0.7070229404263664			0.09062443501444874		
+Statement	review 3	0.9578503688092729			0.6750968848430878			0.8314758283724989			0.07426819902996748		
+Comments	review 1	0.933338879645036			0.6630381750412726			0.8038874687079519			0.06726390583015698		
+Comments	review 2	0.8651041045644756			0.5202264805856661			0.6994167862613035			0.08482630081985233		
+Comments	review 3	0.7706035767511176			0.4139590639993267			0.6021403586366598			0.09198503421155507		
+Meta-categories	review 1	1.0			1.0			1.0			0.0		
+Meta-categories	review 2	1.0			1.0			1.0			0.0		
+Meta-categories	review 3	1.0			0.768355614973262			0.9332232292660482			0.07047537849525227		
+Models and algorithms	all reviews	0.9808921678271221			0.8095277338255977			0.9016260944255923			0.044188396669803454		
+Datasets	all reviews	0.9831956246185625			0.856370604147881			0.9315094647153106			0.033581174373451185		
+Code	all reviews	1.0			0.9453883495145631			0.9826536361455191			0.017459440043189858		
+Experimental results	all reviews	0.9705882352941176			0.7272727272727273			0.8626196798707113			0.06108165712173535		
+Error bars or statistical significance	all reviews												
+Statement	all reviews	0.8398705826367623			0.6248797869404502			0.7418574368490161			0.0537117163660697		
+Comments	all reviews	0.7974443590010496			0.5947994022066609			0.7033964467209565			0.04911272069882352		
+Meta-categories	all reviews	1.0			0.938248757094708			0.9811124942015343			0.018699874384756645		

@@ -12,6 +12,7 @@ from extract_reviews_utils import (
     resume,
     count_checklist,
     create_rating_tsv,
+    create_rating_excel,
 )
 
 @click.command(name="extract-reviews", no_args_is_help=True)
@@ -51,21 +52,18 @@ def cli(
         print(f"Extract reviews and count word for year {year}")
         df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list, year)
 
-        df_all_reviews.to_csv(path_all_reviews, index = False, sep="\t", encoding='utf-8')
-        df_all_stats.to_csv(path_all_stats, index = False, sep="\t", encoding='utf-8')
+        df_all_reviews.to_csv(path_all_reviews, index = True, sep="\t", encoding='utf-8')
+        df_all_stats.to_csv(path_all_stats, index = True, sep="\t", encoding='utf-8')
 
     else:
-
-        print(f"Import tsv from {output_directory}")
         import pandas as pd
-        df_all_reviews = pd.read_csv(path_all_reviews, sep= "\t", index_col=False)
-        df_all_stats = pd.read_csv(path_all_stats, sep= "\t", index_col=False)
+        print(f"Import tsv from {output_directory}")
 
-    
+        df_all_reviews = pd.read_csv(path_all_reviews, sep= "\t",  header=[0, 1], index_col=[0,1], skip_blank_lines=True)
+        df_all_stats = pd.read_csv(path_all_stats, sep= "\t",  header=[0, 1], index_col=[0,1], skip_blank_lines=True)
+
     print(f"Count total words")
     df_all_stats = count_total_words(df_all_stats=df_all_stats, output_directory=output_directory)
-    df_all_reviews.set_index(["id", "category"], inplace= True)
-    df_all_reviews.sort_index(level = ['id', 'category'], ascending=True, inplace=True)
 
     print(f"Creating histo")
     save_hist(df_all_stats, output_directory)
@@ -80,7 +78,8 @@ def cli(
     count_checklist(df_all_reviews=df_all_reviews, output_directory=output_directory, category="repro")
 
     print("create ratin tsv file")
-    create_rating_tsv(df_all_reviews, output_directory=output_directory)
+    create_rating_excel(df_all_reviews= df_all_reviews, output_directory= output_directory)
+    
 
 if __name__ == "__main__":
     cli()

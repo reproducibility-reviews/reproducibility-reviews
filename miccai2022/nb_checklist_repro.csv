@@ -1,0 +1,574 @@
+id	title	repro	review 1	review 3	review 2
+001-Paper1347	3D CVT-GAN: A 3D Convolutional Vision Transformer-GAN for PET Reconstruction				
+002-Paper1233	3D Global Fourier Network for Alzheimer's Disease Diagnosis using Structural MRI				
+003-Paper1512	4D-OR: Semantic Scene Graphs for OR Domain Modeling				
+004-Paper2655	A Comprehensive Study of Modern Architectures and Regularization Approaches on CheXpert5000				
+005-Paper1525	A Deep-Discrete Learning Framework for Spherical Surface Registration				
+006-Paper1155	A Geometry-Constrainted Deformable Attention Network for Aortic Segmentation				
+007-Paper1247	A Hybrid Propagation Network for Interactive Volumetric Image Segmentation				
+008-Paper0063	A Learnable Variational Model for Joint Multimodal MRI Reconstruction and Synthesis				
+009-Paper1374	A Medical Semantic-Assisted Transformer for Radiographic Report Generation				
+010-Paper1785	A Multi-task Network with Weight Decay Skip Connection Training for Anomaly Detection in Retinal Fundus Images				
+011-Paper1016	A New Dataset and A Baseline Model for Breast Lesion Detection in Ultrasound Videos				
+012-Paper0202	A Novel Deep Learning System for Breast Lesion Risk Stratification in Ultrasound Images				
+013-Paper0975	A Novel Fusion Network for Morphological Analysis of Common Iliac Artery				
+014-Paper1405	A Novel Knowledge Keeper Network for 7T-Free But 7T-Guided Brain Tissue Segmentation	based on the checklist, yes.	based on the checklist, yes.		
+015-Paper1881	A Penalty Approach for Normalizing Feature Distributions to Build Confounder-Free Models	The code and data can be released according to the reproducibility checklist.		The code and data can be released according to the reproducibility checklist.	
+016-Paper2636	A Projection-Based K-space Transformer Network for Undersampled Radial MRI Reconstruction with Limited Training Subjects				
+017-Paper0545	A Robust Volumetric Transformer for Accurate 3D Tumor Segmentation				
+018-Paper0114	A Self-Guided Framework for Radiology Report Generation				
+019-Paper0199	A Sense of Direction in Biomedical Neural Networks				
+020-Paper0395	A Spatiotemporal Model for Precise and Efficient Fully-automatic 3D Motion Correction in OCT				
+021-Paper0893	A Transformer-Based Iterative Reconstruction Model for Sparse-View CT Reconstruction				
+022-Paper0036	AANet: Artery-Aware Network for Pulmonary Embolism Detection in CTPA Images				
+023-Paper2394	Accelerated pseudo 3D dynamic speech MR imaging at 3T using unsupervised deep variational manifold learning				
+024-Paper2344	Accurate and Explainable Image-based Prediction Using a Lightweight Generative Model				
+025-Paper0249	Accurate and Robust Lesion RECIST Diameter Prediction and Segmentation with Transformers				
+026-Paper1270	Accurate Corresponding Fiber Tract Segmentation via FiberGeoMap Learner				
+027-Paper0159	ACT: Semi-supervised Domain-adaptive Medical Image Segmentation with Asymmetric Co-Training				
+028-Paper2509	Adaptation of Surgical Activity Recognition Models Across Operating Rooms				
+029-Paper2006	Adapting the Mean Teacher for keypoint-based lung registration under geometric domain shifts				
+030-Paper0272	Adaptive 3D Localization of 2D Freehand Ultrasound Brain Images				
+031-Paper2848	AdaTriplet: Adaptive Gradient Triplet Loss with Automatic Margin Learning for Forensic Medical Image Matching				
+032-Paper1371	Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI				
+033-Paper0332	Adversarial Consistency for Single Domain Generalization in Medical Image Segmentation				
+034-Paper1829	Adversarially Robust Prototypical Few-shot Segmentation with Neural-ODEs				
+035-Paper1248	Agent with Tangent-based Formulation and Anatomical Perception for Standard Plane Localization in 3D Ultrasound				
+036-Paper1552	Aggregative Self-Supervised Feature Learning from Limited Medical Images				
+037-Paper1305	An Accurate Unsupervised Liver Lesion Detection Method Using Pseudo-Lesions				
+038-Paper1415	An adaptive network with extragradient for diffusion MRI-based microstructure estimation				
+039-Paper2756	An Advanced Deep Learning Framework for Video-based Diagnosis of ASD				
+040-Paper0031	An End-to-End Combinatorial Optimization Method for R-band Chromosome Recognition with Grouping Guided Attention				
+041-Paper0049	An Inclusive Task-Aware Framework for Radiology Report Generation				
+042-Paper1549	An Optimal Control Problem for Elastic Registration and Force Estimation in Augmented Surgery				
+043-Paper1625	Analyzing and Improving Low Dose CT Denoising Network via HU Level Slicing				
+044-Paper1703	Analyzing Brain Structural Connectivity as Continuous Random Functions				
+045-Paper1726	Anatomy-Guided Weakly-Supervised Abnormality Localization in Chest X-rays				
+046-Paper2430	Anomaly-aware multiple instance learning for rare anemia disorder classification				
+047-Paper1683	Assessing the Performance of Automated Prediction and Ranking of Patient Age from Chest X-rays Against Clinicians				
+048-Paper1796	Asymmetry Disentanglement Network for Interpretable Acute Ischemic Stroke Infarct Segmentation in Non-Contrast CT Scans				
+049-Paper2434	Atlas-based Semantic Segmentation of Prostate Zones				
+050-Paper0345	Atlas-powered deep learning (ADL) - application to diffusion weighted MRI	Although the architecture is simple (U-Net), the full method is rather complex. Without the code, it seems unlikely one can reproduce the experiments. Although the authors mentioned in the reproducibility checklist that the code was made available, they did not mention it in the paper.	Although the architecture is simple (U-Net), the full method is rather complex. Without the code, it seems unlikely one can reproduce the experiments. Although the authors mentioned in the reproducibility checklist that the code was made available, they did not mention it in the paper.		
+051-Paper1798	Attention mechanisms for physiological signal deep learning: which attention should we take?				
+052-Paper2482	Attentional Generative Multimodal Network for Neonatal Postoperative Pain Estimation				
+053-Paper1971	Attention-enhanced Disentangled Representation Learning for Unsupervised Domain Adaptation in Cardiac Segmentation				
+054-Paper0676	Attentive Symmetric Autoencoder for Brain MRI Segmentation				
+055-Paper0121	Autofocusing+: Noise-Resilient Motion Correction in Magnetic Resonance Imaging				
+056-Paper0386	AutoGAN-Synthesizer: Neural Architecture Search for Cross-Modality MRI Synthesis				
+057-Paper1988	AutoLaparo: A New Dataset of Integrated Multi-tasks for Image-guided Surgical Automation in Laparoscopic Hysterectomy				
+058-Paper1919	Automated Classification of General Movements in Infants Using Two-stream Spatiotemporal Fusion Network				
+059-Paper2247	Automatic Detection of Steatosis in Ultrasound Images with Comparative Visual Labeling				
+060-Paper1361	Automatic identification of segmentation errors for radiotherapy using geometric learning				
+061-Paper2252	Automatic Segmentation of Hip Osteophytes in DXA Scans using U-Nets	Overall, I consider reproducibility of the study as high. Several remarks below. The exact model architecture is not given explicitly, eventhough it is understandable from the text to some extent. The authors have checked the code release in the checklist, however, there is no link to the source code in the article. Software versions are not specified for the critical components of the pipeline.			Overall, I consider reproducibility of the study as high. Several remarks below. The exact model architecture is not given explicitly, eventhough it is understandable from the text to some extent. The authors have checked the code release in the checklist, however, there is no link to the source code in the article. Software versions are not specified for the critical components of the pipeline.
+062-Paper0295	Automating Blastocyst Formation and Quality Prediction in Time-Lapse Imaging with Adaptive Key Frame Selection				
+063-Paper2315	Automation of clinical measurements on radiographs of children's hips				
+064-Paper1731	BabyNet: Residual Transformer Module for Birth Weight Prediction on Fetal Ultrasound Video				
+065-Paper0280	Bayesian dense inverse searching algorithm for real-time stereo matching in minimally invasive surgery				
+066-Paper2505	Bayesian Pseudo Labels: Expectation Maximization for Robust and Efficient Semi-Supervised Segmentation				
+067-Paper1462	Benchmarking the Robustness of Deep Neural Networks to Common Corruptions in Digital Pathology				
+068-Paper2856	BERTHop: An Effective Vision-and-Language Model for Chest X-ray Disease Diagnosis				
+069-Paper1459	Bi-directional Encoding for Explicit Centerline Segmentation by Fully-Convolutional Networks	According to the reproducibility checklist, the authors do not plan to provide their training or evaluation code. The method itself is fairly straightforward and well described, and a re-implementation should be possible. Most hyperparameters used for training the models are provided in the supplementary material, however, only the CLIP data set is available for reproducing results.		According to the reproducibility checklist, the authors do not plan to provide their training or evaluation code. The method itself is fairly straightforward and well described, and a re-implementation should be possible. Most hyperparameters used for training the models are provided in the supplementary material, however, only the CLIP data set is available for reproducing results.	
+070-Paper1108	BiometryNet: Landmark-based Fetal Biometry Estimation from Standard Ultrasound Planes				
+071-Paper1852	BMD-GAN: Bone mineral density estimation using x-ray image decomposition into projections of bone-segmented quantitative computed tomography using hierarchical learning				
+072-Paper0820	Boundary-Enhanced Self-Supervised Learning for Brain Structure Segmentation				
+073-Paper0016	BoxPolyp: Boost Generalized Polyp Segmentation using Extra Coarse Bounding Box Annotations				
+074-Paper2706	Brain-Aware Replacements for Supervised Contrastive Learning in Detection of Alzheimer's Disease				
+075-Paper2270	Breaking with Fixed Set Pathology Recognition through Report-Guided Contrastive Training				
+076-Paper1095	Building Brains: Subvolume Recombination for Data Augmentation in Large Vessel Occlusion Detection				
+077-Paper0239	CACTUSS: Common Anatomical CT-US Space for US examinations	The authors reference the US simulation algorithm and CUT network and provide parameters for each. As noted in their checklist code is not provided . Overall this limits reproducibility of their work. It would be of great interest to the community if they provided access to their framework to allow others to leverage well-curated CT (or MR?!) datasets for US applications.		The authors reference the US simulation algorithm and CUT network and provide parameters for each. As noted in their checklist code is not provided . Overall this limits reproducibility of their work. It would be of great interest to the community if they provided access to their framework to allow others to leverage well-curated CT (or MR?!) datasets for US applications.	
+078-Paper0017	Calibrating Label Distribution for Class-Imbalanced Barely-Supervised Knee Segmentation				
+079-Paper0963	Calibration of Medical Imaging Classification Systems with Weight Scaling				
+080-Paper1145	Camera Adaptation for Fundus-Image-Based CVD Risk Estimation				
+081-Paper2332	Capturing Shape Information with Multi-Scale Topological Loss Terms for 3D Reconstruction				
+082-Paper2156	Carbon Footprint of Selecting and Training Deep Learning Models for Medical Image Analysis				
+083-Paper0783	CaRTS: Causality-driven Robot Tool Segmentation from Vision and Kinematics Data				
+084-Paper1369	CASHformer: Cognition Aware SHape Transformer for Longitudinal Analysis	All parts of the model architecture blocks are well described as well as the training procedure (mostly in the supplementary materials). The dataset is exhaustively detailed as well as the splits and the proposed evaluation process. As stated in the reproducibility checklist, not all hyper-parameters tuning / setting is reported, e.g. the loss weight lambda was empirically set.		All parts of the model architecture blocks are well described as well as the training procedure (mostly in the supplementary materials). The dataset is exhaustively detailed as well as the splits and the proposed evaluation process. As stated in the reproducibility checklist, not all hyper-parameters tuning / setting is reported, e.g. the loss weight lambda was empirically set.	
+085-Paper0894	Censor-aware Semi-supervised Learning for Survival Time Prediction from Medical Images				
+086-Paper0497	CephalFormer: Incorporating Global Structure Constraint into Visual Features for General Cephalometric Landmark Detection				
+087-Paper2197	Cerebral Microbleeds Detection Using a 3D Feature Fused Region Proposal Network with Hard Sample Prototype Learning				
+088-Paper0402	CFDA: Collaborative Feature Disentanglement and Augmentation for Pulmonary Airway Tree Modeling of COVID-19 CTs				
+089-Paper1601	Characterization of brain activity patterns across states of consciousness based on variational auto-encoders	The paper meet the crieria on the checklist.			The paper meet the crieria on the checklist.
+090-Paper1593	CheXRelNet: An Anatomy-Aware Model for Tracking Longitudinal Relationships between Chest X-Rays				
+091-Paper1588	ChrSNet: Chromosome Straightening using Self-attention Guided Networks				
+092-Paper2297	CIRDataset: A large-scale Dataset for Clinically-Interpretable lung nodule Radiomics and malignancy prediction	Apparently, the authors have not understood how to fill out the checklist: all questions are answered with yes, yet most of the information is missing in the paper (e.g. only everage values are given for comparison and no variation, no tests for statistical significance, ...) On a positive note, datasets and code will be released, which should answer many of the open questions.			Apparently, the authors have not understood how to fill out the checklist: all questions are answered with yes, yet most of the information is missing in the paper (e.g. only everage values are given for comparison and no variation, no tests for statistical significance, ...) On a positive note, datasets and code will be released, which should answer many of the open questions.
+093-Paper1320	Class Impression for Data-free Incremental Learning				
+094-Paper1363	Classification-aided High-quality PET Image Synthesis via Bidirectional Contrastive GAN with Shared Information Maximization				
+095-Paper0431	Clinical-realistic Annotation for Histopathology Images with Probabilistic Semi-supervision: A Worst-case Study	More details about each training step, e.g., pre-training, fine-tuning, MC dropout configuration, need to be clarified for reproducibility. The authors checked almost all boxes in the checklist, in which it says the code would be made available. If that is the case, reproducibility is not an issue.		More details about each training step, e.g., pre-training, fine-tuning, MC dropout configuration, need to be clarified for reproducibility. The authors checked almost all boxes in the checklist, in which it says the code would be made available. If that is the case, reproducibility is not an issue.	
+096-Paper2314	CLTS-GAN: Color-Lighting-Texture-Specular Reflection Augmentation for Colonoscopy				
+097-Paper0726	Collaborative Quantization Embeddings for Intra-Subject Prostate MR Image Registration				
+098-Paper0779	Combining mixed-format labels for AI-based pathology detection pipeline in a large-scale knee MRI study	Overall, very high reproducibiliy score. The checklist provided by the authors is in a agreement with the provided details. Few aspects regarding the private dataset and the data management are to be clarified. See the comments in next section.			Overall, very high reproducibiliy score. The checklist provided by the authors is in a agreement with the provided details. Few aspects regarding the private dataset and the data management are to be clarified. See the comments in next section.
+099-Paper2128	Combining multiple atlases to estimate data-driven mappings between functional connectomes using optimal transport				
+100-Paper1882	Computer-aided Tuberculosis Diagnosis with Attribute Reasoning Assistance				
+101-Paper0377	Conditional Generative Data Augmentation for Clinical Audio Datasets				
+102-Paper1704	Conditional VAEs for confound removal and normative modelling of neurodegenerative diseases				
+103-Paper2792	Consistency-based Semi-supervised Evidential Active Learning for Diagnostic Radiograph Classification				
+104-Paper0744	Consistency-preserving Visual Question Answering in Medical Imaging				
+105-Paper0772	Context-Aware Transformers For Spinal Cancer Detection and Radiological Grading				
+106-Paper0991	Context-aware Voxel-wise Contrastive Learning for Label Efficient Multi-organ Segmentation				
+107-Paper1211	ConTrans: Improving Transformer with Convolutional Attention for Medical Image Segmentation				
+108-Paper0616	ContraReg: Contrastive Learning of Multi-modality Unsupervised Deformable Image Registration				
+109-Paper1057	Contrast-free Liver Tumor Detection using Ternary Knowledge Transferred Teacher-student Deep Reinforcement Learning	Most reproducibility checklist are fulfilled.	Most reproducibility checklist are fulfilled.		
+110-Paper0148	Contrastive Functional Connectivity Graph Learning for Population-based fMRI Classification				
+111-Paper1698	Contrastive learning for echocardiographic view integration				
+112-Paper1582	Contrastive Masked Transformers for Forecasting Renal Transplant Function				
+113-Paper1027	Contrastive Re-localization and History Distillation in Federated CMR Segmentation				
+114-Paper0573	Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection				
+115-Paper0458	Coronary R-CNN: Vessel-wise Method for Coronary Artery Lesion Detection and Analysis in Coronary CT Angiography				
+116-Paper2123	CorticalFlow++: Boosting Cortical Surface Reconstruction Accuracy, Regularity, and Interoperability				
+117-Paper0775	CRISP - Reliable Uncertainty Estimation for Medical Image Segmentation				
+118-Paper0133	CS2: A Controllable and Simultaneous Synthesizer of Images and Annotations with Minimal Human Intervention				
+119-Paper0756	Curvature-enhanced Implicit Function Network for High-quality Tooth Model Generation from CBCT Images	I have some concerns about the reproducibility of the paper. The implementation and technical details of the method are not given in the paper. In the checklist, they claim that they will publish the data, training code, and network model. However, this information is not given in the text.			I have some concerns about the reproducibility of the paper. The implementation and technical details of the method are not given in the paper. In the checklist, they claim that they will publish the data, training code, and network model. However, this information is not given in the text.
+120-Paper0539	DA-Net: Dual Branch Transformer and Adaptive Strip Upsampling for Retinal Vessels Segmentation				
+121-Paper0233	D'ARTAGNAN: Counterfactual Video Generation				
+122-Paper1816	Data-Driven Deep Supervision for Skin Lesion Classification				
+123-Paper1296	Data-driven Multi-Modal Partial Medical Image Preregistration by Template Space Patch Mapping				
+124-Paper2698	DDPNet: A novel dual-domain parallel network for low-dose CT reconstruction				
+125-Paper0688	Decoding Task Sub-type States with Group Deep Bidirectional Recurrent Neural Network				
+126-Paper0406	Decoupling Predictions in Distributed Learning for Multi-Center Left Atrial MRI Segmentation				
+127-Paper1750	Deep filter bank regression for super-resolution of anisotropic MR brain images				
+128-Paper2496	Deep Geometric Supervision Improves Spatial Generalization in Orthopedic Surgery Planning				
+129-Paper0636	Deep is a Luxury We Don't Have				
+130-Paper1440	Deep Laparoscopic Stereo Matching with Transformers				
+131-Paper2581	Deep Learning based Modality-Independent Intracranial Aneurysm Detection				
+132-Paper0144	Deep Learning-based Facial Appearance Simulation Driven by Surgically Planned Craniomaxillofacial Bony Movement	The paper provides many details on their implementation, hence there is no major reason to argue about paper reproducibility. Authors report the different hyperparameters used (both in the data processing phase and network training and evaluation phase). Details on the dimension of each modules of the architecture are also provided. Although authors declared that they shared dataset and code in the reproducibility checklist, I do not see any link to such resources in the paper. I would expect that authors share their implementations upon acceptance.		The paper provides many details on their implementation, hence there is no major reason to argue about paper reproducibility. Authors report the different hyperparameters used (both in the data processing phase and network training and evaluation phase). Details on the dimension of each modules of the architecture are also provided. Although authors declared that they shared dataset and code in the reproducibility checklist, I do not see any link to such resources in the paper. I would expect that authors share their implementations upon acceptance.	
+133-Paper1387	Deep learning-based Head and Neck Radiotherapy Planning Dose Prediction via Beam-wise Dose Decomposition	Seems okay since author promised to provide the data and code in the reproducibility checklist. Otherwise, it is unclear to say since some key network architecture details are not provided in the paper itself.	"The authors have essentially answered ""yes"" to every question in the reproducibility checklist. However, in reality most of the relevant points have not been included in the manuscript. While not all raised questions can be addressed in the manuscript, the checklist should be filled out correctly. I believe the most interesting information to add to the manuscript would be how the proposed method's hyperparameters were tuned (especially the loss function hyperparameters alpha and beta), how the baselines were implemented and tuned and additional discussion of the clinical significance (see comments above)."	Seems okay since author promised to provide the data and code in the reproducibility checklist. Otherwise, it is unclear to say since some key network architecture details are not provided in the paper itself.	
+134-Paper1226	Deep Motion Network for Freehand 3D Ultrasound Reconstruction				
+135-Paper2703	Deep Multimodal Guidance for Medical Image Classification				
+136-Paper2262	Deep Regression with Spatial-Frequency Feature Coupling and Image Synthesis for Robot-Assisted Endomicroscopy				
+137-Paper2350	Deep Reinforcement Learning for Detection of Inner Ear Abnormal Anatomy in Computed Tomography				
+138-Paper2325	Deep Reinforcement Learning for Small Bowel Path Tracking using Different Types of Annotations				
+139-Paper0232	Deep treatment response assessment and prediction of colorectal cancer liver metastases				
+140-Paper0637	DeepCRC: Colorectum and Colorectal Cancer Segmentation in CT Scans via Deep Colorectal Coordinate Transform				
+141-Paper0970	Deep-learning Based T1 and T2 Quantification from Undersampled Magnetic Resonance Fingerprinting Data to Track Tracer Kinetics in Small Laboratory Animals	The checklist mentions the code will not be available in a repository as it is still under development, which limits reproducibility.		The checklist mentions the code will not be available in a repository as it is still under development, which limits reproducibility.	The checklist states that the dataset is downloadable, but I did not see an (anonymized) link in the manuscript Same for code and models The exact architecture of the UNet (number of features per layer) is not provided.  Not a problem if code is released. Hyper-parameter strategy is not mentioned, but maybe no hyper-parameter search was performed (which would be fine) Time/cost/memory not reported No statistical significance tests
+142-Paper2133	DeepMIF: Deep learning based cell profiling for multispectral immunofluorescence images with graphical user interface	The reproducibility of the paper is good. The authors provided necessary details from the reproducibility checklist.			The reproducibility of the paper is good. The authors provided necessary details from the reproducibility checklist.
+143-Paper1080	DeepPyramid: Enabling Pyramid View and Deformable Pyramid Reception for Semantic Segmentation in Cataract Surgery Videos				
+144-Paper0626	DeepRecon: Joint 2D Cardiac Segmentation and 3D Volume Reconstruction via A Structure-Specific Generative Method	Good, the author's answers to the reproducibility checklist correspond to the content of their paper.	Good, the author's answers to the reproducibility checklist correspond to the content of their paper.		
+145-Paper1802	Deformer: Towards Displacement Field Learning for Unsupervised Medical Image Registration	Good reproducibility. Many technical details of the proposed method are reported and the authors claimed that the code will release if the work is accepted in the reproducibility checklist.	Good reproducibility. Many technical details of the proposed method are reported and the authors claimed that the code will release if the work is accepted in the reproducibility checklist.		
+146-Paper0151	Degradation-invariant Enhancement of Fundus Images via Pyramid Constraint Network				
+147-Paper0429	Delving into Local Features for Open-Set Domain Adaptation in Fundus Image Analysis				
+148-Paper0702	Denoising for Relaxing: Unsupervised Domain Adaptive Fundus Image Segmentation without Source Data				
+149-Paper0796	Denoising of 3D MR images using a voxel-wise hybrid residual MLP-CNN model to improve small lesion diagnostic confidence				
+150-Paper0632	DentalPointNet: Landmark Localization on High-Resolution 3D Digital Dental Models				
+151-Paper0408	DeSD: Self-Supervised Learning with Deep Self-Distillation for 3D Medical Image Segmentation				
+152-Paper1127	DeStripe: A Self2Self Spatio-Spectral Graph Neural Network with Unfolded Hessian for Stripe Artifact Removal in Light-sheet Microscopy				
+153-Paper1579	Detecting Aortic Valve Pathology from the 3-Chamber Cine Cardiac MRI View				
+154-Paper1426	DEUE: Delta Ensemble Uncertainty Estimation for a More Robust Estimation of Ejection Fraction				
+155-Paper0164	DGMIL: Distribution Guided Multiple Instance Learning for Whole Slide Image Classification	The authors have clarified that the code will be available in the reproducibility checklist.	The authors have clarified that the code will be available in the reproducibility checklist.		
+156-Paper0682	Did You Get What You Paid For? Rethinking Annotation Cost of Deep Learning Based Computer Aided Detection in Chest Radiographs				
+157-Paper0467	Diffusion Deformable Model for 4D Temporal Medical Image Generation				
+158-Paper0704	Diffusion Models for Medical Anomaly Detection				
+159-Paper1952	Digestive Organ Recognition in Video Capsule Endoscopy based on Temporal Segmentation Network				
+160-Paper1447	Discrepancy and Gradient-guided Multi-Modal Knowledge Distillation for Pathological Glioma Grading				
+161-Paper0659	Discrepancy-based Active Learning for Weakly Supervised Bleeding Segmentation in Wireless Capsule Endoscopy Images				
+162-Paper0353	Disentangle then Calibrate: Selective Treasure Sharing for Generalized Rare Disease Diagnosis				
+163-Paper2193	DisQ: Disentangling Quantitative MRI Mapping of the Heart	The manuscript mentions the code will be available in a repository and the checklist supports this statement. There are some little details not explained in the paper, but it may be out of the scope of a conference paper. Once uploaded, it will guarantee reproducibility.			The manuscript mentions the code will be available in a repository and the checklist supports this statement. There are some little details not explained in the paper, but it may be out of the scope of a conference paper. Once uploaded, it will guarantee reproducibility.
+164-Paper0323	Distilling Knowledge from Topological Representations for Pathological Complete Response Prediction				
+165-Paper1029	Domain Adaptive Mitochondria Segmentation via Enforcing Inter-Section Consistency				
+166-Paper1242	Domain Adaptive Nuclei Instance Segmentation and Classification via Category-aware Feature Alignment and Pseudo-labelling	The authors do not provide the description of results with central tendency (e.g. mean) & variation in the paper, which they answered Yes in the checklist. It would be a plus to add mean and variance to the results.	The authors do not provide the description of results with central tendency (e.g. mean) & variation in the paper, which they answered Yes in the checklist. It would be a plus to add mean and variance to the results.		
+167-Paper0127	Domain Specific Convolution and High Frequency Reconstruction based Unsupervised Domain Adaptation for Medical Image Segmentation				
+168-Paper1315	Domain-Adaptive 3D Medical Image Synthesis: An Efficient Unsupervised Approach				
+169-Paper0992	Domain-Prior-Induced Structural MRI Adaptation for Clinical Progression Prediction of Subjective Cognitive Decline				
+170-Paper1693	DOMINO: Domain-aware Model Calibration in Medical Image Segmentation				
+171-Paper0021	Double-Uncertainty Guided Spatial and Temporal Consistency Regularization Weighting for Learning-based Abdominal Registration				
+172-Paper1456	DRGen: Domain Generalization in Diabetic Retinopathy Classification				
+173-Paper1510	DS3-Net: Difficulty-perceived Common-to-T1ce Semi-Supervised Multimodal MRI Synthesis Network				
+174-Paper0950	DSP-Net: Deeply-Supervised Pseudo-Siamese Network for Dynamic Angiographic Image Matching				
+175-Paper1389	DSR: Direct Simultaneous Registration for Multiple 3D Images				
+176-Paper0333	Dual-Branch Squeeze-Fusion-Excitation Module for Cross-Modality Registration of Cardiac SPECT and CT				
+177-Paper0838	Dual-Distribution Discrepancy for Anomaly Detection in Chest X-Rays				
+178-Paper1476	Dual-graph Learning Convolutional Networks for Interpretable Alzheimer's Disease Diagnosis				
+179-Paper1430	Dual-HINet: Dual Hierarchical Integration Network of Multigraphs for Connectional Brain Template Learning				
+180-Paper1066	DuDoCAF: Dual-Domain Cross-Attention Fusion with Recurrent Transformer for Fast Multi-contrast MR Imaging				
+181-Paper0434	Dynamic Bank Learning for Semi-supervised Federated Image Diagnosis with Class Imbalance				
+182-Paper2304	EchoCoTr: Estimation of the Left Ventricular Ejection Fraction from Spatiotemporal Echocardiography				
+183-Paper1732	EchoGNN: Explainable Ejection Fraction Estimation with Graph Neural Networks				
+184-Paper0300	Edge-oriented Point-cloud Transformer for 3D Intracranial Aneurysm Segmentation				
+185-Paper1159	Effective Opportunistic Esophageal Cancer Screening using Noncontrast CT Imaging				
+186-Paper2172	Efficient Bayesian Uncertainty Estimation for nnU-Net				
+187-Paper0368	Efficient Biomedical Instance Segmentation via Knowledge Distillation	Some details are missing. The authors seems just check everything 'yes' in the checklist. Missing one of the loss function definition. Missing software framework and version. No new dataset proposed. Missing training time for the proposed distillation method.		Some details are missing. The authors seems just check everything 'yes' in the checklist. Missing one of the loss function definition. Missing software framework and version. No new dataset proposed. Missing training time for the proposed distillation method.	
+188-Paper2377	Efficient population based hyperparameter scheduling for medical image segmentation				
+189-Paper2746	Electron Microscope Image Registration using Laplacian Sharpening Transformer U-Net	use of public challenge data unclear if code is to be made available no significance testing (not claimed in checklist but unclear why not carried out)	use of public challenge data unclear if code is to be made available no significance testing (not claimed in checklist but unclear why not carried out)		
+190-Paper0420	Embedding Gradient-based Optimization in Image Registration Networks				
+191-Paper1872	Embedding Human Brain Function via Transformer				
+192-Paper1262	End-to-End cell recognition by point annotation				
+193-Paper0791	End-to-End Evidential-Efficient Net for Radiomics Analysis of Brain MRI to Predict Oncogene Expression and Overall Survival				
+194-Paper0506	End-to-end Learning for Image-based Detection of Molecular Alterations in Digital Pathology				
+195-Paper2010	End-to-end Multi-Slice-to-Volume Concurrent Registration and Multimodal Generation				
+196-Paper1271	End-to-End Segmentation of Medical Images via Patch-wise Polygons Prediction	Some details are missing. The authors seems just check everything 'yes' in the checklist. Missing one of the loss function definition, i.e. L_{BCE}. Missing software framework and version. No new dataset proposed. Missing training time for the proposed network.		Some details are missing. The authors seems just check everything 'yes' in the checklist. Missing one of the loss function definition, i.e. L_{BCE}. Missing software framework and version. No new dataset proposed. Missing training time for the proposed network.	
+197-Paper2651	Enforcing connectivity of 3D linear structures using their 2D projections	Apparently, the authors have not understood how to fill out the checklist: for many questions answered with yes, the information is actually missing in the paper (e.g. no tests for statistical significance, memory footprint, analysis of situations in which the method failed, etc.). Since no code will be published, these details will remain unknown.			Apparently, the authors have not understood how to fill out the checklist: for many questions answered with yes, the information is actually missing in the paper (e.g. no tests for statistical significance, memory footprint, analysis of situations in which the method failed, etc.). Since no code will be published, these details will remain unknown.
+198-Paper1940	Enhancing model generalization for substantia nigra segmentation using a test-time normalization-based method				
+199-Paper1749	Ensembled Prediction of Rheumatic Heart Disease from Ungated Doppler Echocardiography Acquired in Low-Resource Settings	The authors filled out the reproducibility checklists, but will not release their codes and dataset in the future. Then implementation details of all models in the paper are well described. It is easy to follow the paper and reproduce their work.	"Overall reasonably good. The model was clearly described although code has not been made available. One point of concern though - in the checklist, the authors answered ""Yes"" to ""The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results."" I agree that they specified final hyperparameter values but I did not see any description of the range of values tested or how the hyperparameters were optimised (see detailed comments below)."	The authors filled out the reproducibility checklists, but will not release their codes and dataset in the future. Then implementation details of all models in the paper are well described. It is easy to follow the paper and reproduce their work.	
+200-Paper0439	Estimating Model Performance under Domain Shifts with Class-Specific Confidence Scores				
+201-Paper1563	Evidence fusion with contextual discounting for multi-modality medical image segmentation				
+202-Paper0960	Evolutionary Multi-objective Architecture Search Framework: Application to COVID-19 3D CT Classification				
+203-Paper1856	Explainable Contrastive Multiview Graph Representation of Brain, Mind, and Behavior				
+204-Paper2558	Explaining Chest X-ray Pathologies in Natural Language				
+205-Paper0081	Exploring Smoothness and Class-Separation for Semi-supervised Medical Image Segmentation				
+206-Paper2742	Extended Electrophysiological Source Imaging with Spatial Graph Filters				
+207-Paper2316	FairPrune: Achieving Fairness Through Pruning for Dermatological Disease Diagnosis				
+208-Paper2313	Fast Automatic Liver Tumor Radiofrequency Ablation Planning via Learned Physics Model				
+209-Paper2730	Fast FF-to-FFPE Whole Slide Image Translation via Laplacian Pyramid and Contrastive Learning				
+210-Paper2428	Fast Spherical Mapping of Cortical Surface Meshes using Deep Unsupervised Learning	The paper meets the requirements of the checklist.		The paper meets the requirements of the checklist.	
+211-Paper1680	Fast Unsupervised Brain Anomaly Detection and Segmentation with Diffusion Models	While the code is not publicly available (and the reproducibility checklist says so), I believe the authors might have used the original repositories for VQ-VAE and DDPM which are publicly available. Even though implementation details are not given, it might be possible to reproduce the method partially. Furthermore, the results are presented using public datasets.		While the code is not publicly available (and the reproducibility checklist says so), I believe the authors might have used the original repositories for VQ-VAE and DDPM which are publicly available. Even though implementation details are not given, it might be possible to reproduce the method partially. Furthermore, the results are presented using public datasets.	
+212-Paper2777	Feature Re-calibration based Multiple Instance Learning for Whole Slide Image Classification				
+213-Paper2407	Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection				
+214-Paper2425	Federated Medical Image Analysis with Virtual Sample Synthesis	All questions in the reproducibility checklist are positive and implementation details are given in the paper.		All questions in the reproducibility checklist are positive and implementation details are given in the paper.	
+215-Paper0107	Federated Stain Normalization for Computational Pathology				
+216-Paper1639	FedHarmony: Unlearning Scanner Bias with Distributed Data				
+217-Paper0905	Few-shot Generation of Personalized Neural Surrogates for Cardiac Simulation via Bayesian Meta-Learning				
+218-Paper0176	Few-shot Medical Image Segmentation Regularized with Self-reference and Contrastive Learning				
+219-Paper0530	FFCNet: Fourier Transform-Based Frequency Learning and Complex Convolutional Network for Colon Disease Classification				
+220-Paper1280	Fine-grained Correlation Loss for Regression	According to the checklist, the authors will opensource their codes in the future. In the paper, the authors also provide enough details for reproduction.		According to the checklist, the authors will opensource their codes in the future. In the paper, the authors also provide enough details for reproduction.	In the reproducibility checklist, the authors mentioned that the code has been made available or will release if this work is accepted. I think it is great if they release the code if this work is accepted. Unfortunately, there are no details regarding how the authors acquired data. I assume that the dataset was dedicated to this study since there are no citations or download links. If it is the case, it can be mentioned in the manuscript explicitly. The validations seem well-documented except for concern regarding the reported batch size, which has been explained in detail in the comments.
+221-Paper0464	Flat-aware Cross-stage Distilled Framework for Imbalanced Medical Image Classification	Good. Experiments were performed on public datasets and the authors plan to release code after peer-review according to the checklist.			Good. Experiments were performed on public datasets and the authors plan to release code after peer-review according to the checklist.
+222-Paper0166	Flexible Sampling for Long-tailed Skin Lesion Classification				
+223-Paper1037	fMRI Neurofeedback Learning Patterns are Predictive of Personal and Clinical Traits				
+224-Paper0656	Free Lunch for Surgical Video Understanding by Distilling Self-Supervisions				
+225-Paper1550	Frequency-Aware Inverse-Consistent Deep Learning for OCT-Angiogram Super-Resolution				
+226-Paper2446	From Images to Probabilistic Anatomical Shapes: A Deep Variational Bottleneck Approach				
+227-Paper2489	FSE Compensated Motion Correction for MRI Using Data Driven Methods				
+228-Paper2619	Fusing Modalities by Multiplexed Graph Neural Networks for Outcome Prediction in Tuberculosis				
+229-Paper0029	FUSSNet: Fusing Two Sources of Uncertainty for Semi-Supervised Medical Image Segmentation				
+230-Paper0398	GaitForeMer: Self-Supervised Pre-Training of Transformers via Human Motion Forecasting for Few-Shot Gait Impairment Severity Estimation				
+231-Paper2241	GazeRadar: A Gaze and Radiomics-guided Disease Localization Framework				
+232-Paper2084	Geometric Constraints for Self-supervised Monocular Depth Estimation on Laparoscopic Images with Dual-task Consistency	The authors have confirmed in the checklist that they will share the code to the public. The dataset used in the work is from a public challenge.	The authors have confirmed in the checklist that they will share the code to the public. The dataset used in the work is from a public challenge.		
+233-Paper1173	Gigapixel Whole-Slide Images Classification using Locally Supervised Learning				
+234-Paper1622	Global Multi-modal 2D/3D Registration via Local Descriptors Learning				
+235-Paper1165	GradMix for nuclei segmentation and classification in imbalanced pathology image datasets				
+236-Paper0770	Graph convolutional network with probabilistic spatial regression: application to craniofacial landmark detection from 3D photogrammetry				
+237-Paper0826	Graph Emotion Decoding from Visually Evoked Neural Responses				
+238-Paper1499	Graph-based Compression of Incomplete 3D Photoacoustic Data				
+239-Paper1645	Greedy Optimization of Electrode Arrangement for Epiretinal Prostheses				
+240-Paper1177	Hand Hygiene Quality Assessment using Image-to-Image Translation				
+241-Paper2141	Harnessing Deep Bladder Tumor Segmentation with Logical Clinical Knowledge				
+242-Paper0695	Hierarchical Brain Networks Decomposition via Prior Knowledge Guided Deep Belief Network				
+243-Paper2461	Histogram-based unsupervised domain adaptation for medical image classification				
+244-Paper2095	How Much to Aggregate: Learning Adaptive Node-wise Scales on Graphs for Brain Networks	According to the reproducibility checklist and information from the paper, the results should be reproducible after the potential acceptance.			According to the reproducibility checklist and information from the paper, the results should be reproducible after the potential acceptance.
+245-Paper0053	Hybrid Graph Transformer for Tissue Microstructure Estimation with Undersampled Diffusion MRI Data				
+246-Paper1120	Hybrid Spatio-Temporal Transformer Network for Predicting Ischemic Stroke Lesion Outcomes from 4D CT Perfusion Imaging				
+247-Paper1527	Ideal Midsagittal Plane Detection using Deep Hough Plane Network for Brain Surgical Planning				
+248-Paper1790	Identification of vascular cognitive impairment in adult moyamoya disease via integrated graph convolutional network				
+249-Paper1279	Identify Consistent Imaging Genomic Biomarkers for Characterizing the Survival-associated Interactions between Tumor-infiltrating Lymphocytes and Tumors				
+250-Paper1422	Identifying and Combating Bias in Segmentation Networks by leveraging multiple resolutions				
+251-Paper2056	Identifying Phenotypic Concepts Discriminating Molecular Breast Cancer Sub-Types				
+252-Paper0735	Implicit Neural Representations for Generative Modeling of Living Cell Shapes				
+253-Paper1642	Implicit Neural Representations for Medical Imaging Segmentation	The source code is available according to the author's answer to the reproducibility checklist.		The source code is available according to the author's answer to the reproducibility checklist.	
+254-Paper0867	Improved Domain Generalization for Cell Detection in Histopathology Images via Test-Time Stain Augmentation				
+255-Paper2493	Improving Trustworthiness of AI Disease Severity Rating in Medical Imaging with Ordinal Conformal Prediction Sets				
+256-Paper2533	Incorporating intratumoral heterogeneity into weakly-supervised deep learning models via variance pooling				
+257-Paper0284	INSightR-Net: Interpretable Neural Network for Regression using Similarity-based Comparisons to Prototypical Examples				
+258-Paper0807	InsMix: Towards Realistic Generative Data Augmentation for Nuclei Instance Segmentation				
+259-Paper0939	Instrument-tissue Interaction Quintuple Detection in Surgery Videos				
+260-Paper0943	Interaction-Oriented Feature Decomposition for Medical Image Lesion Detection				
+261-Paper2064	Interpretable differential diagnosis for Alzheimer's disease and Frontotemporal dementia				
+262-Paper0324	Interpretable Graph Neural Networks for Connectome-Based Brain Disorder Analysis	The submission meets all criteria on the reproducibility checklist.		The submission meets all criteria on the reproducibility checklist.	
+263-Paper2611	Interpretable Modeling and Reduction of Unknown Errors in Mechanistic Operators				
+264-Paper0742	Interpretable signature of consciousness in resting-state functional network brain activity				
+265-Paper1987	Intervention & Interaction Federated Abnormality Detection with Noisy Clients				
+266-Paper1938	Intra-class Contrastive Learning Improves Computer Aided Diagnosis of Breast Cancer in Mammography				
+267-Paper1542	Invertible Sharpening Network for MRI Reconstruction Enhancement				
+268-Paper2202	Is a PET all you need? A multi-modal study for Alzheimer's disease using 3D CNNs				
+269-Paper1711	iSegFormer: Interactive Segmentation via Transformers with Application to 3D Knee MR Images				
+270-Paper0679	Joint Class-Affinity Loss Correction for Robust Medical Image Segmentation with Noisy Labels				
+271-Paper0179	Joint Graph Convolution for Analyzing Brain Structural and Functional Connectome				
+272-Paper1464	Joint Modeling of Image and Label Statistics for Enhancing Model Generalizability of Medical Image Segmentation				
+273-Paper1557	Joint Prediction of Meningioma Grade and Brain Invasion via Task-Aware Contrastive Learning				
+274-Paper2040	Joint Region-Attention and Multi-Scale Transformer for Microsatellite Instability Detection from Whole Slide Images in Gastrointestinal Cancer				
+275-Paper1974	Kernel Attention Transformer (KAT) for Histopathology Whole Slide Image Classification				
+276-Paper0419	Key-frame Guided Network for Thyroid Nodule Recognition using Ultrasound Videos				
+277-Paper0584	Knowledge Distillation to Ensemble Global and Interpretable Prototype-based Mammogram Classification Models	In the reproducibility checklist, the authors claim to release the training/evaluation codes with pretrained models which is a plus. Since the proposed method is a sophisticated ensemble learning framework with multiple loss functions, source code release could be a great help.		In the reproducibility checklist, the authors claim to release the training/evaluation codes with pretrained models which is a plus. Since the proposed method is a sophisticated ensemble learning framework with multiple loss functions, source code release could be a great help.	
+278-Paper2211	Landmark-free Statistical Shape Modeling via Neural Flow Deformations				
+279-Paper1397	Layer Ensembles: A Single-Pass Uncertainty Estimation in Deep Learning for Segmentation				
+280-Paper1555	Learn to Ignore: Domain Adaptation for Multi-Site MRI Analysis				
+281-Paper1959	Learning Incrementally to Segment Multiple Organs in a CT Image				
+282-Paper2474	Learning iterative optimisation for deformable image registration of lung CT with recurrent convolutional networks				
+283-Paper0492	Learning Robust Representation for Joint Grading of Ophthalmic Diseases via Adaptive Curriculum and Feature Disentanglement				
+284-Paper1319	Learning self-calibrated optic disc and cup segmentation from multi-rater annotations				
+285-Paper2366	Learning shape distributions from large databases of healthy organs: applications to zero-shot and few-shot abnormal pancreas detection				
+286-Paper1507	Learning towards Synchronous Network Memorizability and Generalizability for Continual Segmentation across Multiple Sites				
+287-Paper0967	Learning Tumor-Induced Deformations to Improve Tumor-Bearing Brain MR Segmentation				
+288-Paper1591	Learning Underrepresented Classes from Decentralized Partially Labeled Medical Images				
+289-Paper1723	Learning with Context Encoding for Single-Stage Cranial Bone Labeling and Landmark Localization				
+290-Paper2333	Learning-based and unrolled motion-compensated reconstruction for cardiac MR CINE imaging				
+291-Paper0256	Learning-based US-MR Liver Image Registration with Spatial Priors				
+292-Paper1034	Lesion Guided Explainable Few Weak-shot Medical Report Generation	Authors provided a checklist for reproducibility. The description of the methods, implementation and validation studies are also satisfactory.		Authors provided a checklist for reproducibility. The description of the methods, implementation and validation studies are also satisfactory.	
+293-Paper1939	Lesion-Aware Contrastive Representation Learning for Histopathology Whole Slide Images Analysis				
+294-Paper0847	Lesion-aware Dynamic Kernel for Polyp Segmentation				
+295-Paper0586	Less is More: Adaptive Curriculum Learning for Thyroid Nodule Diagnosis				
+296-Paper1674	Leveraging Labeling Representations in Uncertainty-based Semi-supervised Segmentation				
+297-Paper2800	LIDP: A Lung Image Dataset with Pathological Information for Lung Cancer Screening				
+298-Paper2088	LifeLonger: A Benchmark for Continual Disease Classification	The code of the paper will be made available publicly.  From the checklist authors claim that the software framework and runtime/memory footprint statistics are included, however both are not included in the paper.	The code of the paper will be made available publicly.  From the checklist authors claim that the software framework and runtime/memory footprint statistics are included, however both are not included in the paper.		
+299-Paper0447	LiftReg: Limited Angle 2D/3D Deformable Registration				
+300-Paper2336	Light-weight spatio-temporal graphs for segmentation and ejection fraction prediction in cardiac ultrasound				
+301-Paper2383	Local Attention Graph-based Transformer for Multi-target Genetic Alteration Prediction	The reproducibility of the paper is good. The authors provided necessary details from the reproducibility checklist.			The reproducibility of the paper is good. The authors provided necessary details from the reproducibility checklist.
+302-Paper0578	Local Graph Fusion of Multi-View MR Images for Knee Osteoarthritis Diagnosis				
+303-Paper0919	Localizing the Recurrent Laryngeal Nerve via Ultrasound with a Bayesian Shape Framework				
+304-Paper1059	Local-Region and Cross-Dataset Contrastive Learning for Retinal Vessel Segmentation				
+305-Paper1649	Longitudinal Infant Functional Connectivity Prediction via Conditional Intensive Triplet Network				
+306-Paper2874	Long-tailed Multi-label Retinal Diseases Recognition via Relational Learning and Knowledge Distillation				
+307-Paper1411	Low-Dose CT Reconstruction via Dual-Domain Learning and Controllable Modulation				
+308-Paper0125	Low-Resource Adversarial Domain Adaptation for Cross-Modality Nucleus Detection				
+309-Paper2658	LSSANet: A Long Short Slice-Aware Network for Pulmonary Nodule Detection				
+310-Paper0217	MAL: Multi-modal attention learning for tumor diagnosis based on bipartite graph and multiple branches				
+311-Paper2233	MaNi: Maximizing Mutual Information for Nuclei Cross-Domain Unsupervised Segmentation				
+312-Paper2849	Mapping in Cycles: Dual-Domain PET-CT Synthesis Framework with Cycle-Consistent Constraints	The description of the training details in this paper is insufficient. Moreover, the authors did not give any positive response regarding the code release in the reproducibility checklist. So I think this paper does not have good reproducibility.	The description of the training details in this paper is insufficient. Moreover, the authors did not give any positive response regarding the code release in the reproducibility checklist. So I think this paper does not have good reproducibility.		
+313-Paper0549	Mask Rearranging Data Augmentation for 3D Mitochondria Segmentation				
+314-Paper0438	MaxStyle: Adversarial Style Composition for Robust Medical Image Segmentation				
+315-Paper0755	MCP-Net: Inter-frame Motion Correction with Patlak Regularization for Whole-body Dynamic PET				
+316-Paper1909	Measurement-conditioned Denoising Diffusion Probabilistic Model for Under-sampled Medical Image Reconstruction				
+317-Paper1138	Mesh-based 3D Motion Tracking in Cardiac MRI using Deep Learning				
+318-Paper0422	Meta-hallucinator: Towards few-shot cross-modality cardiac image segmentation				
+319-Paper2696	MIRST-DM: Multi-Instance RST with Drop-Max Layer for Robust Classification of Breast Cancer				
+320-Paper1972	Mixed Reality and Deep Learning for External Ventricular Drainage Placement: a Fast and Automatic Workflow for Emergency Treatments				
+321-Paper0363	mmFormer: Multimodal Medical Transformer for Incomplete Multimodal Learning of Brain Tumor Segmentation				
+322-Paper0649	Modality-adaptive Feature Interaction for Brain Tumor Segmentation with Missing Modalities				
+323-Paper1690	ModDrop++: A Dynamic Filter Network with Intra-subject Co-training for Multiple Sclerosis Lesion Segmentation with Missing Modalities				
+324-Paper1665	Modelling Cycles in Brain Networks with the Hodge Laplacian				
+325-Paper0964	Momentum Contrastive Voxel-wise Representation Learning for Semi-supervised Volumetric Medical Image Segmentation				
+326-Paper2100	Morphology-Aware Interactive Keypoint Estimation				
+327-Paper2818	Moving from 2D to 3D: volumetric medical image classification for rectal cancer staging				
+328-Paper2326	MRI Reconstruction by Completing Under-sampled K-space Data with Learnable Fourier Interpolation				
+329-Paper1984	mulEEG: A Multi-View Representation Learning on EEG Signals				
+330-Paper0876	Multidimensional Hypergraph on Delineated Retinal Features for Pathological Myopia Task.	The reproducibility checklist was accurately filled out.  One thing that could improve reproducibility of the paper is to make the full code available after publication.		The reproducibility checklist was accurately filled out.  One thing that could improve reproducibility of the paper is to make the full code available after publication.	The checked points in the reproducibilty checklist match perfectly the information provided in the paper.
+331-Paper1289	Multi-head Attention-based Masked Sequence Model for Mapping Functional Brain Networks				
+332-Paper2758	Multi-institutional Investigation of Model Generalizability for Virtual Contrast-enhanced MRI Synthesis				
+333-Paper0373	Multimodal Brain Tumor Segmentation Using Contrastive Learning based Feature Comparison with Monomodal Normal Brain Images	All the necessary checklist for the resproducibilty are provided.		All the necessary checklist for the resproducibilty are provided.	
+334-Paper1961	Multimodal Contrastive Learning for Prospective Personalized Estimation of CT Organ Dose				
+335-Paper2386	Multi-Modal Hypergraph Diffusion Network with Dual Prior for Alzheimer Classification				
+336-Paper1841	Multi-Modal Masked Autoencoders for Medical Vision-and-Language Pre-Training				
+337-Paper1488	Multi-modal Retinal Image Registration Using a Keypoint-Based Vessel Structure Aligning Network				
+338-Paper1274	Multi-Modal Unsupervised Pre-Training for Surgical Operating Room Workflow Analysis	The authors present the method in such a manner that it should be reproducible. All the details provided on the checklist were truthful.	The authors present the method in such a manner that it should be reproducible. All the details provided on the checklist were truthful.		
+339-Paper1682	Multimodal-GuideNet: Gaze-Probe Bidirectional Guidance in Obstetric Ultrasound Scanning	The experiments design and data generation are clearly described in the paper, which matches what the authors claimed in the reproducibility checklist.		The experiments design and data generation are clearly described in the paper, which matches what the authors claimed in the reproducibility checklist.	
+340-Paper0966	Multiple Instance Learning with Mixed Supervision in Gleason Grading				
+341-Paper0404	Multi-scale Super-resolution Magnetic Resonance Spectroscopic Imaging with Adjustable Sharpness				
+342-Paper1789	Multiscale Unsupervised Retinal Edema Area Segmentation in OCT Images				
+343-Paper2517	Multi-site Normative Modeling of Diffusion Tensor Imaging Metrics Using Hierarchical Bayesian Regression				
+344-Paper0613	Multi-Task Lung Nodule Detection in Chest Radiographs with a Dual Head Network				
+345-Paper2559	Multi-task video enhancement for dental interventions				
+346-Paper1336	Multi-TransSP: Multimodal Transformer for Survival Prediction of Nasopharyngeal Carcinoma Patients				
+347-Paper0568	Multi-view Local Co-occurrence and Global Consistency Learning Improve Mammogram Classification Generalisation				
+348-Paper0534	MUSCLE: Multi-task Self-supervised Continual Learning to Pre-train Deep Models for X-ray Images of Multiple Body Parts				
+349-Paper0974	NAF: Neural Attenuation Fields for Sparse-View CBCT Reconstruction				
+350-Paper0929	NerveFormer: A Cross-Sample Aggregation Network for Corneal Nerve Segmentation	The detailed network architecture is not included in the paper. But the authors commit to releasing the code in the reproducibility checklist.		The detailed network architecture is not included in the paper. But the authors commit to releasing the code in the reproducibility checklist.	
+351-Paper0436	NestedFormer: Nested Modality-Aware Transformer for Brain Tumor Segmentation				
+352-Paper0117	Neural Annotation Refinement: Development of a New 3D Dataset for Adrenal Gland Analysis				
+353-Paper1091	Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery				
+354-Paper0240	Neuro-RDM: An Explainable Neural Network Landscape of Reaction-Diffusion Model for Cognitive Task Recognition	Upon reading the paper and the checklist, I found several inconsistencies. For example, I found no description of the parameter settings, architecture, range of parameter values, sensitivity to parameters, memory footprint or compute software in the paper.		Upon reading the paper and the checklist, I found several inconsistencies. For example, I found no description of the parameter settings, architecture, range of parameter values, sensitivity to parameters, memory footprint or compute software in the paper.	
+355-Paper2027	Noise transfer for unsupervised domain adaptation of retinal OCT images				
+356-Paper0041	Noise2SR: Learning to Denoise from Super-Resolved Single Noisy Fluorescence Image				
+357-Paper1103	Non-iterative Coarse-to-fine Registration based on Single-pass Deep Cumulative Learning				
+358-Paper0915	Nonlinear Conditional Time-varying Granger Causality of Task fMRI via Deep Stacking Networks and Adaptive Convolutional Kernels				
+359-Paper0984	Nonlinear Regression of Remaining Surgical Duration via Bayesian LSTM-based Deep Negative Correlation Learning				
+360-Paper0560	NVUM: Non-Volatile Unbiased Memory for Robust Medical Image Classification				
+361-Paper2729	On Surgical Planning of Percutaneous Nephrolithotomy with Patient-Specific CTRs	The paper describes the generation of point clouds using Slicer3D. More detail would help with respect to filters and marching operations used to segment the CT data. Answers to reproducibility checklist make sense and the authors do a good job explaining the algorithm and tools they used.	The paper describes the generation of point clouds using Slicer3D. More detail would help with respect to filters and marching operations used to segment the CT data. Answers to reproducibility checklist make sense and the authors do a good job explaining the algorithm and tools they used.		
+362-Paper0175	On the Dataset Quality Control for Image Registration Evaluation				
+363-Paper1718	On the Uncertain Single-View Depths in Colonoscopies				
+364-Paper0816	One-Shot Segmentation of Novel White Matter Tracts via Extensive Data Augmentation	The authors use open available data of the HPC. The authors use TractSeg as backbone, for which code is available. No code is provided in for the framework their paper is based on, nor in their paper. However, mathematical definitions are provided and based on the checklist the reproducibility seems to be given.			The authors use open available data of the HPC. The authors use TractSeg as backbone, for which code is available. No code is provided in for the framework their paper is based on, nor in their paper. However, mathematical definitions are provided and based on the checklist the reproducibility seems to be given.
+365-Paper0658	Online Easy Example Mining for Weakly-supervised Gland Segmentation from Histology Images				
+366-Paper1267	Online Reflective Learning for Robust Medical Image Segmentation				
+367-Paper1419	OnlyCaps-Net, a capsule only based neural network for 2D and 3D semantic segmentation				
+368-Paper0347	Only-Train-Once MR Fingerprinting for Magnetization Transfer Contrast Quantification				
+369-Paper1164	Opinions Vary? Diagnosis First!				
+370-Paper2723	Opportunistic Incidence Prediction of Multiple Chronic Diseases from Abdominal CT Imaging Using Multi-Task Learning				
+371-Paper0303	Optimal MRI Undersampling Patterns for Pathology Localization				
+372-Paper0371	Optimal Transport based Ordinal Pattern Tree Kernel for Brain Disease Diagnosis				
+373-Paper0654	ORF-Net: Deep Omni-supervised Rib Fracture Detection from Chest CT Scans				
+374-Paper1581	Orientation-guided Graph Convolutional Network for Bone Surface Segmentation	The paper has a reasonable level of repeatability, providing details about the hyperparameters and systems used. The authors also indicate that code will be made available. The dataset appears to be acquired internally but the authors indicate in the reproducibility checklist that the dataset could be accessed by others.		The paper has a reasonable level of repeatability, providing details about the hyperparameters and systems used. The authors also indicate that code will be made available. The dataset appears to be acquired internally but the authors indicate in the reproducibility checklist that the dataset could be accessed by others.	
+375-Paper2185	Orientation-Shared Convolution Representation for CT Metal Artifact Learning				
+376-Paper1923	Out-of-Distribution Detection for Long-tailed and Fine-grained Skin Lesion Images				
+377-Paper0142	Overlooked Trustworthiness of Saliency Maps				
+378-Paper0938	Parameter-free latent space transformer for zero-shot bidirectional cross-modality liver segmentation				
+379-Paper1793	Patcher: Patch Transformers with Mixture of Experts for Precise Medical Image Segmentation				
+380-Paper1843	Patch-wise Deep Metric Learning for Unsupervised Low-Dose CT Denoising				
+381-Paper1020	PD-DWI: Predicting response to neoadjuvant chemotherapy in invasive breast cancer with Physiologically-Decomposed Diffusion-Weighted MRI machine-learning model				
+382-Paper1435	Personalized Diagnostic Tool for Thyroid Cancer Classification using Multi-view Ultrasound				
+383-Paper2497	Personalized dMRI Harmonization on Cortical Surface				
+384-Paper0842	PET denoising and uncertainty estimation based on NVAE model using quantile regression loss	"The authors ticked ""Yes"" for most items of the reproductibility checklist, which is sometimes in contradiction with what is provided in the paper (e.g. range of hyper-parameters considered). It seems that the code will be made available."	"The authors ticked ""Yes"" for most items of the reproductibility checklist, which is sometimes in contradiction with what is provided in the paper (e.g. range of hyper-parameters considered). It seems that the code will be made available."		
+385-Paper0844	PHTrans: Parallelly Aggregating Global and Local Representations for Medical Image Segmentation				
+386-Paper0288	Physically Inspired Constraint for Unsupervised Regularized Ultrasound Elastography				
+387-Paper0495	Physiological Model based Deep Learning Framework for Cardiac TMP Recovery				
+388-Paper2184	Physiology-based simulation of the retinal vasculature enables annotation-free segmentation of OCT angiographs				
+389-Paper0677	Point Beyond Class: A Benchmark for Weakly Semi-Supervised Abnormality Localization in Chest X-Rays	The author did not mention the code in the paper, but according to the checklist, it seems they will release the code after acceptation. Please make clear. I suggest that at least release the splitting of the training set and the test set, which may help in pursuing the goal of setting a benchmark for the field.	The author did not mention the code in the paper, but according to the checklist, it seems they will release the code after acceptation. Please make clear. I suggest that at least release the splitting of the training set and the test set, which may help in pursuing the goal of setting a benchmark for the field.		
+390-Paper0008	Poisson2Sparse: Self-Supervised Poisson Denoising From a Single Image				
+391-Paper2552	Pose-based Tremor Classification for Parkinson's Disease Diagnosis from Video				
+392-Paper0672	Position-prior Clustering-based Self-attention Module for Knee Cartilage Segmentation				
+393-Paper0764	Predicting molecular traits from tissue morphology through self-interactive multi-instance learning				
+394-Paper1668	Predicting Spatio-Temporal Human Brain Response Using fMRI				
+395-Paper1700	Privacy Preserving Image Registration				
+396-Paper0683	ProCo: Prototype-aware Contrastive Learning for Long-tailed Medical Image Classification				
+397-Paper1110	Prognostic Imaging Biomarker Discovery in Survival Analysis for Idiopathic Pulmonary Fibrosis				
+398-Paper0362	Progression models for imaging data with Longitudinal Variational Auto Encoders				
+399-Paper1523	Progressive Deep Segmentation of Coronary Artery via Hierarchical Topology Learning				
+400-Paper0603	Progressive Subsampling for Oversampled Data - Application to Quantitative MRI				
+401-Paper2710	Prostate Cancer Histology Synthesis using StyleGAN Latent Space Annotation				
+402-Paper1589	PRO-TIP: Phantom for RObust automatic ultrasound calibration by TIP detection				
+403-Paper1074	Prototype Learning of Inter-network Connectivity for ASD Diagnosis and Personalized Analysis	Reproducibility is fairly good - based on the checklist/submission it appears code will be shared with acceptance. However, there is some missing experimental analysis (e.g. parameter sensitivity, statistical significance, when does method fail) that could be added to improve the paper.		Reproducibility is fairly good - based on the checklist/submission it appears code will be shared with acceptance. However, there is some missing experimental analysis (e.g. parameter sensitivity, statistical significance, when does method fail) that could be added to improve the paper.	
+404-Paper0648	Pseudo Bias-Balanced Learning for Debiased Chest X-ray Classification	The authors provide all the source code in the checklist and supplemental materials. And they use public dataset which is beneficial for reproducing the work.		The authors provide all the source code in the checklist and supplemental materials. And they use public dataset which is beneficial for reproducing the work.	
+405-Paper1613	Radiological Reports Improve Pre-Training for Localized Imaging Tasks on Chest X-Rays				
+406-Paper1231	RandStainNA: Learning Stain-Agnostic Features from Histology Slides by Bridging Stain Augmentation and Normalization				
+407-Paper0281	Real-Time 3D Reconstruction of Human Vocal Folds via High-Speed Laser-Endoscopy				
+408-Paper2438	Recurrent Implicit Neural Graph for Deformable Tracking in Endoscopic Videos				
+409-Paper0524	Reducing Positional Variance in Cross-sectional Abdominal CT Slices with Deep Conditional Generative Models				
+410-Paper1513	RefineNet: An Automated Framework to Generate Task and Subject-Specific Brain Parcellations for Resting-State fMRI Analysis				
+411-Paper2050	Region Proposal Rectification Towards Robust Instance Segmentation of Biological Images				
+412-Paper2308	Region-guided CycleGANs for Stain Transfer in Whole Slide Images				
+413-Paper1821	Regression Metric Loss: Learning a Semantic Representation Space for Medical Images				
+414-Paper1003	Reinforcement Learning Driven Intra-modal and Inter-modal Representation Learning for 3D Medical Image Classification				
+415-Paper1608	Reinforcement learning for active modality selection during diagnosis				
+416-Paper2249	Reliability of quantification estimates in MR Spectroscopy: CNNs vs. traditional model fitting				
+417-Paper0724	Reliability-aware Contrastive Self-ensembling for Semi-supervised Medical Image Classification				
+418-Paper0235	ReMix: A General and Efficient Framework for Multiple Instance Learning based Whole Slide Image Classification				
+419-Paper1023	RemixFormer: A Transformer Model for Precision Skin Tumor Differential Diagnosis via Multi-modal Imaging and Non-imaging Data				
+420-Paper0090	Removal of Confounders via Invariant Risk Minimization for Medical Diagnosis				
+421-Paper2844	RepsNet: Combining Vision with Language for Automated Medical Reports				
+422-Paper1632	Residual Wavelon Convolutional Networks for Characterization of Disease Response on MRI				
+423-Paper2639	Rethinking Breast Lesion Segmentation in Ultrasound: A New Video Dataset and A Baseline Network				
+424-Paper0739	Rethinking Surgical Captioning: End-to-End Window-Based MLP Transformer Using Patches				
+425-Paper0641	Rethinking Surgical Instrument Segmentation: A Background Image Can Be All You Need				
+426-Paper2077	Retrieval of surgical phase transitions using reinforcement learning				
+427-Paper1808	Revealing Continuous Brain Dynamical Organization with Multimodal Graph Transformer				
+428-Paper0359	Rib Suppression in Digital Chest Tomosynthesis				
+429-Paper2294	Robust Segmentation of Brain MRI in the Wild with Hierarchical CNNs and no Retraining				
+430-Paper0042	RPLHR-CT Dataset and Transformer Baseline for Volumetric Super-Resolution from CT Scans				
+431-Paper2738	RT-DNAS: Real-time Constrained Differentiable Neural Architecture Search for 3D Cardiac Cine MRI Segmentation	Ok. Authors mention in the reproducibility checklist that the code will be available.		Ok. Authors mention in the reproducibility checklist that the code will be available.	
+432-Paper2234	RTN: Reinforced Transformer Network for Coronary CT Angiography Vessel-level Image Quality Assessment				
+433-Paper0279	S3R: Self-supervised Spectral Regression for Hyperspectral Histopathology Image Classification				
+434-Paper0610	S5CL: Unifying Fully-Supervised, Self-Supervised, and Semi-Supervised Learning Through Hierarchical Contrastive Learning				
+435-Paper0710	Sample hardness based gradient loss for long-tailed cervical cell detection				
+436-Paper0559	SAPJNet: Sequence-Adaptive Prototype-Joint Network for Small Sample Multi-Sequence MRI Diagnosis				
+437-Paper0153	SATr: Slice Attention with Transformer for Universal Lesion Detection				
+438-Paper2686	Scale-Equivariant Unrolled Neural Networks for Data-Efficient Accelerated MRI Reconstruction				
+439-Paper1966	Screening of Dementia on OCTA Images via Multi-projection Consistency and Complementarity				
+440-Paper1416	Scribble2D5: Weakly-Supervised Volumetric Image Segmentation via Scribble Annotations				
+441-Paper0453	Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision				
+442-Paper1998	SD-LayerNet: Semi-supervised retinal layer segmentation in OCT using disentangled representation with anatomical priors				
+443-Paper1826	SeATrans: Learning Segmentation-Assisted diagnosis model via Transformer	The authors have used public data and they will make their code public, according to their answers in the checklist. So I believe their work is reproducible.		The authors have used public data and they will make their code public, according to their answers in the checklist. So I believe their work is reproducible.	
+444-Paper2257	Segmentation of Whole-brain Tractography: A Deep Learning Algorithm Based on 3D Raw Curve Points				
+445-Paper1676	Self-Ensembling Vision Transformer (SEViT) for Robust Medical Image Classification	As listed reproducibility checklist, the work should be in good reproducibility.		As listed reproducibility checklist, the work should be in good reproducibility.	
+446-Paper1504	Self-learning and One-shot Learning based Single-slice Annotation for 3D Medical Image Segmentation				
+447-Paper1341	SelfMix: A Self-adaptive Data Augmentation Method for Lesion Segmentation				
+448-Paper2822	Self-Rating Curriculum Learning for Localization and Segmentation of Tuberculosis on Chest Radiograph				
+449-Paper0442	Self-supervised 3D anatomy segmentation using self-distilled masked image transformer (SMIT)				
+450-Paper1766	Self-supervised 3D Patient Modeling with Multi-modal Attentive Fusion				
+451-Paper0450	Self-Supervised Depth Estimation in Laparoscopic Image using 3D Geometric Consistency				
+452-Paper2634	Self-Supervised Learning of Morphological Representation for 3D EM Segments with Cluster-Instance Correlations				
+453-Paper2043	Self-Supervised Pre-Training for Nuclei Segmentation				
+454-Paper0106	Semi-supervised histological image segmentation via hierarchical consistency enforcement				
+455-Paper0597	Semi-supervised Learning for Nerve Segmentation in Corneal Confocal Microscope Photography				
+456-Paper1900	Semi-supervised learning with data harmonisation for biomarker discovery from resting state fMRI	The authors have checked off all relevant items on the reproducibility checklist, including sharing of code, and the reporting in the paper matches the checklist, so should be highly reproducible.		The authors have checked off all relevant items on the reproducibility checklist, including sharing of code, and the reporting in the paper matches the checklist, so should be highly reproducible.	
+457-Paper0358	Semi-Supervised Medical Image Classification with Temporal Knowledge-Aware Regularization				
+458-Paper0427	Semi-Supervised Medical Image Segmentation Using Cross-Model Pseudo-Supervision with Shape Awareness and Local Context Constraints				
+459-Paper1441	Semi-Supervised PR Virtual Staining for Breast Histopathological Images				
+460-Paper0482	Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation				
+461-Paper0543	Sensor Geometry Generalization to Untrained Conditions in Quantitative Ultrasound Imaging	"In the reproducibility checklist, authors claim that they share a sample test dataset and their code. The current version of the manuscript has no links to open source repositories, but I expect authors would make data and code available upon acceptance. I see it very difficult to replicate the method and reproduce the results by only following the description provided in the paper, due to the complexity of the proposed architecture. Moreover, authors declare that ethical approval is ""not applicable"" to their work. Actually, since their evaluation include real patient data, ethical approval should be present."	"In the reproducibility checklist, authors claim that they share a sample test dataset and their code. The current version of the manuscript has no links to open source repositories, but I expect authors would make data and code available upon acceptance. I see it very difficult to replicate the method and reproduce the results by only following the description provided in the paper, due to the complexity of the proposed architecture. Moreover, authors declare that ethical approval is ""not applicable"" to their work. Actually, since their evaluation include real patient data, ethical approval should be present."		
+462-Paper0415	SETMIL: Spatial Encoding Transformer-based Multiple Instance Learning for Pathological Image Analysis				
+463-Paper2204	SGT: Scene Graph-Guided Transformer for Surgical Report Generation	According to the reproducibility checklist, the source code and pretrained models will be made publicly available, which is essential to guarantee the reproducibility of the results. Additionally, the method was developed using a public benchmark dataset for surgical report generation, which promotes research in the area.			According to the reproducibility checklist, the source code and pretrained models will be made publicly available, which is essential to guarantee the reproducibility of the results. Additionally, the method was developed using a public benchmark dataset for surgical report generation, which promotes research in the area.
+464-Paper0193	Shape-Aware Weakly/Semi-Supervised Optic Disc and Cup Segmentation with Regional/Marginal Consistency				
+465-Paper1627	Shape-based features of white matter fiber-tracts associated with outcome in Major Depression Disorder				
+466-Paper0537	ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation	The work was evaluated on a publicly available dataset. Following the checklist, I assume that the code will be available after acceptance.	The work was evaluated on a publicly available dataset. Following the checklist, I assume that the code will be available after acceptance.		
+467-Paper2725	Show, Attend and Detect: Towards Fine-grained Assessment of Abdominal Aortic Calcification on Vertebral Fracture Assessment Scans				
+468-Paper0060	Siamese Encoder-based Spatial-Temporal Mixer for Growth Trend Prediction of Lung Nodules on CT Scans				
+469-Paper1539	Simultaneous Bone and Shadow Segmentation Network using Task Correspondence Consistency				
+470-Paper0924	Skin Lesion Recognition with Class-Hierarchy Regularized Hyperbolic Embeddings				
+471-Paper1806	SLAM-TKA: Real-time Intra-operative Measurement of Tibial Resection Plane in Conventional Total Knee Arthroplasty				
+472-Paper2190	SMESwin Unet: Merging CNN and Transformer for Medical Image Segmentation				
+473-Paper2715	Sparse Interpretation of Graph Convolutional Networks for Multi-Modal Diagnosis of Alzheimer's Disease				
+474-Paper1168	Spatial-hierarchical Graph Neural Network with Dynamic Structure Learning for Histological Image Classification	The checked points in the reproducibilty checklist match perfectly the information provided in the paper.			The checked points in the reproducibilty checklist match perfectly the information provided in the paper.
+475-Paper0557	Spatiotemporal Attention for Early Prediction of Hepatocellular Carcinoma based on Longitudinal Ultrasound Images				
+476-Paper1715	Spatio-temporal motion correction and iterative reconstruction of in-utero fetal fMRI				
+477-Paper0361	Stabilize, Decompose, and Denoise: Self-Supervised Fluoroscopy Denoising				
+478-Paper1623	Stay focused - Enhancing model interpretability through guided feature training				
+479-Paper1049	Stepwise Feature Fusion: Local Guides Global				
+480-Paper2108	Stereo Depth Estimation via Self-Supervised Contrastive Representation Learning	The authors provide implementaion details in the paper and also agree to release codes and pretrained models in the reproducibility checklist.			The authors provide implementaion details in the paper and also agree to release codes and pretrained models in the reproducibility checklist.
+481-Paper0252	Stroke lesion segmentation from low-quality and few-shot MRIs via similarity-weighted self-ensembling framework				
+482-Paper0050	Structure-consistent Restoration Network for Cataract Fundus Image Enhancement				
+483-Paper1454	Super-Focus: Domain Adaptation for Embryo Imaging via Self-Supervised Focal Plane Regression				
+484-Paper1684	SUPER-IVIM-DC: Intra-voxel incoherent motion based Fetal lung maturity assessment from limited DWI data using supervised learning coupled with data-consistency				
+485-Paper2448	Supervised Contrastive Learning to Classify Paranasal Anomalies in the Maxillary Sinus				
+486-Paper1659	Supervised Deep Learning for Head Motion Correction in PET				
+487-Paper1418	Suppressing Poisoning Attacks on Federated Learning for Medical Imaging				
+489-Paper2739	Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment				
+490-Paper0951	Surgical Skill Assessment via Video Semantic Aggregation				
+491-Paper0916	Surgical-VQA: Visual Question Answering in Surgical Scenes using Transformer	According to the reproducibility checklist, the source code and pretrained models will be made publicly available, which is essential to guarantee the reproducibility of the results. Additionally, the method was developed using a public benchmark dataset for surgical VQA, which promotes research in the area. Despite not including any intention to publicly release the data in the main text, the reproducibility checklist mention that they will be released upon acceptance. Furthermore, there should be included more statistics about the new data. How were these annotations generated? This information will be valuable for new research on this task.			According to the reproducibility checklist, the source code and pretrained models will be made publicly available, which is essential to guarantee the reproducibility of the results. Additionally, the method was developed using a public benchmark dataset for surgical VQA, which promotes research in the area. Despite not including any intention to publicly release the data in the main text, the reproducibility checklist mention that they will be released upon acceptance. Furthermore, there should be included more statistics about the new data. How were these annotations generated? This information will be valuable for new research on this task.
+492-Paper1119	Survival Prediction of Brain Cancer with Incomplete Radiology, Pathology, Genomic, and Demographic Data				
+493-Paper0015	SVoRT: Iterative Transformer for Slice-to-Volume Registration in Fetal Brain MRI				
+494-Paper1401	Swin Deformable Attention U-Net Transformer (SDAUT) for Explainable Fast MRI	The reproducibility checklist shows the authors will upload their code and implementation details online. The experimental settings are listed in the manuscript, but the hyper-parameters for the proposed method are missing.	Some model specifications are missing in the paper. But the authors have agreed to release codes and models in the checklist.	The reproducibility checklist shows the authors will upload their code and implementation details online. The experimental settings are listed in the manuscript, but the hyper-parameters for the proposed method are missing.	
+495-Paper0819	Swin-VoxelMorph: A Symmetric Unsupervised Learning Model for Deformable Medical Image Registration Using Swin Transformer				
+496-Paper0194	Tagged-MRI Sequence to Audio Synthesis via Self Residual Attention Guided Heterogeneous Translator				
+497-Paper0832	Task-oriented Self-supervised Learning for Anomaly Detection in Electroencephalography				
+498-Paper0887	Task-relevant Feature Replenishment for Cross-centre Polyp Segmentation				
+499-Paper1318	TBraTS: Trusted Brain Tumor Segmentation				
+500-Paper1738	Test Time Transform Prediction for Open Set Histopathological Image Recognition				
+501-Paper0841	Test-time Adaptation with Calibration of Medical Image Classification Nets for Label Distribution Shift				
+502-Paper2231	Test-Time Adaptation with Shape Moments for Image Segmentation				
+503-Paper0733	Test-time image-to-image translation ensembling improves out-of-distribution generalization in histopathology				
+504-Paper2524	TGANet: Text-guided attention for improved polyp segmentation				
+505-Paper2266	The (de)biasing effect of GAN-based augmentation methods on skin lesion images				
+506-Paper2284	The Dice loss in the context of missing or empty labels: introducing Ph and 				
+507-Paper1636	The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning				
+508-Paper2523	The Semi-constrained Network-Based Statistic (scNBS): integrating local and global information for brain network inference				
+509-Paper0158	Thoracic Lymph Node Segmentation in CT imaging via Lymph Node Station Stratification and Size Encoding				
+510-Paper1449	TINC: Temporally Informed Non-Contrastive Learning for Disease Progression Modeling in Retinal OCT Volumes				
+511-Paper2727	TMSS: An End-to-End Transformer-based Multimodal Network for Segmentation and Survival Prediction	"The reproducibility checklist well matches the contribution. I would like to argue, however, that significance analyses (""Not applicable"") are well applicable, and thus, that the depiction of measures of confidence would have been adequate."		"The reproducibility checklist well matches the contribution. I would like to argue, however, that significance analyses (""Not applicable"") are well applicable, and thus, that the depiction of measures of confidence would have been adequate."	
+512-Paper2295	Toward Clinically Assisted Colorectal Polyp Recognition via Structured Cross-modal Representation Consistency				
+513-Paper2769	Towards Confident Detection of Prostate Cancer using High Resolution Micro-ultrasound				
+514-Paper1162	Towards Holistic Surgical Scene Understanding				
+515-Paper1782	Towards performant and reliable undersampled MR reconstruction via diffusion model sampling				
+516-Paper0313	Towards Unsupervised Ultrasound Video Clinical Quality Assessment with Multi-Modality Data				
+517-Paper0500	Tracking by weakly-supervised learning and graph optimization for whole-embryo C. elegans lineages				
+518-Paper2282	TractoFormer: A Novel Fiber-level Whole Brain Tractography Analysis Framework Using Spectral Embedding and Vision Transformers	The code and data will be released according to the reproducibility checklist.		The code and data will be released according to the reproducibility checklist.	
+519-Paper1253	TransEM: Residual Swin-Transformer based regularized PET image reconstruction	The authors made an effort to make their paper reproductible, which lots of setup values. I did not find in the paper or in supplementary material a way to access the code, whereas it seems to be done according to the reproducibility checklist filled in by the authors. Maybe this is not possible at this stage. The authors detailed the hyperparameters values of the neural network, of the method, and the initialization of the image, which is very important. However, were  several runs make ? Or was the initialization of the neural network weights fixed ? About the PET simulation, some simulation setup is missing, like the system matrix modelling, the number of line of responses.		The authors made an effort to make their paper reproductible, which lots of setup values. I did not find in the paper or in supplementary material a way to access the code, whereas it seems to be done according to the reproducibility checklist filled in by the authors. Maybe this is not possible at this stage. The authors detailed the hyperparameters values of the neural network, of the method, and the initialization of the image, which is very important. However, were  several runs make ? Or was the initialization of the neural network weights fixed ? About the PET simulation, some simulation setup is missing, like the system matrix modelling, the number of line of responses.	
+520-Paper1473	Transformer based feature fusion for left ventricle segmentation in 4D flow MRI				
+521-Paper0965	Transformer based multiple instance learning for weakly supervised histopathology image segmentation				
+522-Paper1805	Transformer Based Multi-task Deep Learning with Intravoxel Incoherent Motion Model Fitting for Microvascular Invasion Prediction of Hepatocellular Carcinoma				
+523-Paper1238	Transformer Based Multi-View Network for Mammographic Image Classification				
+524-Paper0423	Transformer Lesion Tracker				
+525-Paper1461	Transforming the Interactive Segmentation for Medical Imaging				
+526-Paper1860	TransFusion: Multi-view Divergent Fusion for Medical Image Segmentation with Transformers				
+527-Paper0417	TranSQ: Transformer-based Semantic Query for Medical Report Generation				
+528-Paper0837	Trichomonas Vaginalis Segmentation in Microscope Images				
+529-Paper0983	UASSR:Unsupervised Arbitrary Scale Super-resolution Reconstruction of Single Anisotropic 3D images via Disentangled Representation Learning?				
+530-Paper0805	ULTRA: Uncertainty-aware Label Distribution Learning for Breast Tumor Cellularity Assessment				
+531-Paper2324	Uncertainty Aware Sampling Framework of Weak-Label Learning for Histology Image Classification				
+532-Paper1024	Uncertainty-aware Cascade Network for Ultrasound Image Segmentation with Ambiguous Boundary				
+533-Paper0136	Uncertainty-Guided Lung Nodule Segmentation with Feature-Aware Attention				
+534-Paper0010	Undersampled MRI Reconstruction with Side Information-Guided Normalisation				
+535-Paper0077	UNeXt: MLP-based Rapid Medical Image Segmentation Network	The reviewer agrees with the checklist and is happy with the reproducibility of the paper overall.			The reviewer agrees with the checklist and is happy with the reproducibility of the paper overall.
+536-Paper1888	Uni4Eye: Unified 2D and 3D Self-supervised Pre-training via Masked Image Modeling Transformer for Ophthalmic Image Classification				
+537-Paper2587	Unified Embeddings of Structural and Functional Connectome via a Function-Constrained Structural Graph Variational Auto-Encoder				
+538-Paper1638	Unsupervised Contrastive Learning of Image Representations from Ultrasound Videos with Hard Negative Mining				
+539-Paper0316	Unsupervised Cross-Disease Domain Adaptation by Lesion Scale Matching				
+540-Paper2464	Unsupervised Cross-Domain Feature Extraction for Single Blood Cell Image Classification				
+541-Paper0421	Unsupervised Deep Non-Rigid Alignment by Low-Rank Loss and Multi-Input Attention				
+542-Paper0045	Unsupervised Deformable Image Registration with Absent Correspondences in Pre-operative and Post-Recurrence Brain Tumor MRI Scans				
+543-Paper2562	Unsupervised Domain Adaptation with Contrastive Learning for OCT Segmentation				
+544-Paper0139	Unsupervised Domain Adaptive Fundus Image Segmentation with Category-level Regularization				
+545-Paper0928	Unsupervised Lesion-Aware Transfer Learning for Diabetic Retinopathy Grading in Ultra-Wide-Field Fundus Photography				
+546-Paper2097	Unsupervised Nuclei Segmentation using Spatial Organization Priors				
+547-Paper2242	Unsupervised Representation Learning of Cingulate Cortical Folding Patterns				
+548-Paper0547	Usable Region Estimate for Assessing Practical Usability of Medical Image Segmentation Models				
+549-Paper0871	USG-Net: Deep Learning-based Ultrasound Scanning-Guide for an Orthopedic Sonographer	Although based on the reproducibility checklist, the authors demonstrate a commitment to publishing their code publicly, it is unclear whether the dataset will also me made available. The hyperparameters used appear to be missing in the manuscript.		Although based on the reproducibility checklist, the authors demonstrate a commitment to publishing their code publicly, it is unclear whether the dataset will also me made available. The hyperparameters used appear to be missing in the manuscript.	
+550-Paper0962	Using Guided Self-Attention with Local Information for Polyp Segmentation	Some model details are missing. The authors do state in the reproducibility checklist that they will release the code.			Some model details are missing. The authors do state in the reproducibility checklist that they will release the code.
+551-Paper1714	USPoint: Self-Supervised Interest Point Detection and Description for Ultrasound-Probe Motion Estimation during Fine-Adjustment Standard Fetal Plane Finding				
+552-Paper1036	Vector Quantisation for Robust Segmentation				
+553-Paper2513	Video-based Surgical Skills Assessment using Long term Tool Tracking				
+554-Paper2365	Vision-Language Contrastive Learning Approach to Robust Automatic Placenta Analysis Using Photographic Images				
+555-Paper2116	Visual deep learning-based explanation for neuritic plaques segmentation in Alzheimer's Disease using weakly annotated whole slide histopathological images				
+556-Paper0718	Visual explanations for the detection of diabetic retinopathy from retinal fundus images				
+557-Paper0634	vMFNet: Compositionality Meets Domain-generalised Segmentation				
+558-Paper0897	Vol2Flow: Segment 3D Volumes using a Sequence of Registration Flows				
+559-Paper1748	Warm Start Active Learning with Proxy Labels & Selection via Semi-Supervised Fine-Tuning	The authors have satisfied the reproducibility checklist.		The authors have satisfied the reproducibility checklist.	
+560-Paper1064	WavTrans: Synergizing Wavelet and Cross-Attention Transformer for Multi-Contrast MRI Super-resolution				
+561-Paper1100	Weakly Supervised MR-TRUS Image Synthesis for Brachytherapy of Prostate Cancer				
+562-Paper0890	Weakly Supervised Online Action Detection for Infant General Movements				
+563-Paper1515	Weakly Supervised Segmentation by Tensor Graph Learning for Whole Slide Images				
+564-Paper1599	Weakly Supervised Volumetric Image Segmentation with Deformed Templates				
+565-Paper0507	Weakly-supervised Biomechanically-constrained CT/MRI Registration of the Spine				
+566-Paper1283	Weakly-supervised High-fidelity Ultrasound Video Synthesis with Feature Decoupling				
+567-Paper0130	Weighted Concordance Index Loss-based Multimodal Survival Modeling for Radiation Encephalopathy Assessment in Nasopharyngeal Carcinoma Radiotherapy				
+568-Paper1328	What can we learn about a generated image corrupting its latent representation?				
+569-Paper0115	What Makes for Automatic Reconstruction of Pulmonary Segments				
+570-Paper2080	White Matter Tracts are Point Clouds: Neuropsychological Score Prediction and Critical Region Localization via Geometric Deep Learning	By using the openly available data from the Human Connectome Project and a brief description of the statistics of the subjects used, reproducibility seems to be possible. In addition, the settings and software framework are described in Section 2.5. The authors' answers on the reproducibility checklist confirm the given reproducibility. It would be beneficial, if the code would be provided on github.	By using the openly available data from the Human Connectome Project and a brief description of the statistics of the subjects used, reproducibility seems to be possible. In addition, the settings and software framework are described in Section 2.5. The authors' answers on the reproducibility checklist confirm the given reproducibility. It would be beneficial, if the code would be provided on github.		
+571-Paper1180	Whole Slide Cervical Cancer Screening Using Graph Attention Network and Supervised Contrastive Learning				
+572-Paper0898	Why patient data cannot be easily forgotten?				
+573-Paper0475	XMorpher: Full Transformer for Deformable Medical Image Registration via Cross Attention				
+574-Paper1063	Y-Net: A Spatiospectral Dual-Encoder Network for Medical Image Segmentation				

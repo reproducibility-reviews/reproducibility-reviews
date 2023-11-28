@@ -13,6 +13,7 @@ def agreement_proportion(matrix: pd.DataFrame):
     k = len(matrix)-1
     for i in range(k):
         pe += matrix.loc[i, k] * matrix.loc[k, i]
+
     return pe
 
 def observed_proportion(matrix: pd.DataFrame):
@@ -20,6 +21,7 @@ def observed_proportion(matrix: pd.DataFrame):
     k = len(matrix) - 1
     for i in range(k):
         po += matrix.loc[i, i]
+
     return po
 
 def sd_cohen(po, pe, matrix):
@@ -33,8 +35,7 @@ def sd_fleiss(po, pe, matrix):
     y1 = 0
     y2 = 0 
     k = len(matrix) -1
-    print(k)
-    print(matrix)
+
     for i in range (k):
         for j in range(k):
             if j != i:
@@ -44,36 +45,56 @@ def sd_fleiss(po, pe, matrix):
         carre2 = (matrix.loc[k,i] + matrix.loc[i,k])  
         carre2 = carre2*carre2   
         y2 += matrix.loc[i,i] * carre2
-
-    y3 = (po*pe - (2*pe) + po)
+    y3 = ((po*pe) - (2*pe) + po)
     y3 = y3*y3
-    print((po*ci(pe,pe)) + (ci(po, po)* y1) )
-    print(- (2*ci(pe,po)*y2) - y3)
-    x = (po*ci(pe,pe)) + (ci(po, po)* y1) - (2*ci(pe,po)*y2) - y3
-    print(x)
+    x = (po*(1-pe)*(1-pe)) + ((1-po)*(1-po)* y1) - (2*(1-pe)*(1-po)*y2) - y3
     res = sqrt(x)
     return res/ci(pe,pe)
 
 
-def se(matrix: pd.DataFrame, func:callable):
-    po = observed_proportion(matrix)
-    pe = agreement_proportion(matrix)
-    return func(po, pe, matrix)/ sqrt(len(matrix))
+def se(matrix: pd.DataFrame, po, pe, func:callable):
+    return func(po, pe, matrix)/ sqrt(matrix.loc[len(matrix)-1, len(matrix)-1])
 
 def kappa(po, pe):
     return (po-pe)/(1-pe)
 
+def bootstrap_cqk(y_true, y_pred, quad=False):
+    import random
+    num_resamples = 993
+
+    Y = np.array([y_true, y_pred]).T
+
+    weighted_kappas = []
+    for i in range(num_resamples):
+        Y_resample = np.array(random.choices(Y, k=len(Y)))
+        y_true_resample = Y_resample[:, 0]
+        y_pred_resample = Y_resample[:, 1]
+        if quad==False:
+            weighted_kappa = cohen_kappa_score(y_true_resample.astype(str), y_pred_resample.astype(str))
+        else: 
+            weighted_kappa = cohen_kappa_score(y_true_resample.astype(str), y_pred_resample.astype(str), weights='quadratic')
+        weighted_kappas.append(weighted_kappa)
+
+    return np.mean(weighted_kappas), np.std(weighted_kappas), np.percentile(weighted_kappas, 2.25), np.percentile(weighted_kappas, 97.5)
 
 def confidence_interval(matrix: pd.DataFrame, func:callable):
+    print("matrix")
+    print(matrix)
+    print("po")
     po = observed_proportion(matrix)
-    pe = agreement_proportion(matrix)
-    kappa_ = kappa(po, pe)
     print(po)
+    print("pe")
+    pe = agreement_proportion(matrix)
     print(pe)
+    print("kappa")
+    kappa_ = kappa(po, pe)
     print(kappa_)
-    low = -1.96 * se(matrix, func) + kappa_
-    high = 1.96 * se(matrix, func) + kappa_
-    se_ = se(matrix, func)
+    print("se")
+    se_ = se(matrix, po, pe, func) 
+    print(se_)
+    low = -1.96 * se_ + kappa_
+    high = 1.96 * se_ + kappa_
+    
     return kappa_, low, high, se_
 
 def count(list_):
@@ -100,64 +121,24 @@ def create_matrix(list_1, list_2):
                     if (list_1[i]== att_1):
                         if list_2[i] == att_2 :
                                 matrix.loc[k,l]+=1
-        print(matrix)
         for i in range(size):
             for j in range(size):
                 matrix.loc[size, i] += matrix.loc[j, i]
                 matrix.loc[i, size] += matrix.loc[i, j]
-        print(matrix)
+        for i in range(size):      
+            matrix.loc[size, size] += matrix.loc[i, size]
         matrix = matrix / len(list_1)
     return matrix
 
-list_categories = [
-    "Models and algorithms",
-    "Datasets",
-    "Code",
-    "Experimental results",
-    "Error bars or statistical significance",
-    "Statement",
-    "Comments",
-    "Meta-categories",
-]
-tuple_columns = []
+def create_dataframe(list_categories:list):
 
-for i in list_categories:
-    tuple_columns.append((i, "review 1"))
-    tuple_columns.append((i, "review 2"))
-    tuple_columns.append((i, "review 3"))
-    tuple_columns.append((i, "all reviews"))
-tuple_columns.append(("Agreement", "all reviews"))
+    list_stats = ["kappa score", "confidence interval low", "confidence interval high", "standard error"]
+    list_methods = ["bootstrap", "cohen", "fleiss"]
 
-list_stats = [
-    "kappa score",
-    "confidence interval low",
-    "confidence interval high",
-    "standard error"
-    ]
+    index_line = pd.MultiIndex.from_product([list_categories, ["review 1", "review 2", "review 3"]], names=["category", "review"])
+    index_column = pd.MultiIndex.from_product( [list_stats, list_methods], names=["stat", "method"])
 
-list_methods = ["bootstrap", "cohen", "fleiss"]
-tuple_lines = []
-
-for stat in list_stats:
-    for method in list_methods:
-        tuple_lines.append((stat, method))
-
-index_column = pd.MultiIndex.from_tuples(tuple_columns, names=["category", "review"])
-index_line = pd.MultiIndex.from_tuples(tuple_lines, names=["stat", "method"])
-
-df_final = pd.DataFrame(index=index_column, columns=index_line)
-
-# Enter the path to the tsv file with the rating from the first reviwer
-path_tsv = "/Users/camille.brianceau/aramis/reproducibility-reviews/annotations/annotations_elina2.tsv"
-df_rating_1 = pd.read_csv(path_tsv, sep = "\t", index_col=False, header= None)
-df_rating_1 = df_rating_1.dropna()
-
-
-
-# Enter the path to the tsv file with the rating from the second reviwer
-path_tsv = "/Users/camille.brianceau/aramis/reproducibility-reviews/annotations/annotations_olivier2.tsv"
-df_rating_2 = pd.read_csv(path_tsv, sep = "\t", index_col=False, header= None)
-df_rating_2 = df_rating_2.dropna()
+    return pd.DataFrame(index=index_line, columns=index_column)
 
 
 def get_stats(list_1, list_2):
@@ -165,19 +146,18 @@ def get_stats(list_1, list_2):
     x = cohen_kappa_score(list_1, list_2)
 
     data = (list_1, list_2)
-    res = bootstrap(data, cohen_kappa_score, method="percentile")
+    mean_, std_, low_, high_ = bootstrap_cqk(list_1, list_2)
 
-    return x, res
+
+    return x, mean_, std_, low_, high_ 
 
 def write_stat(category, review, df_final, list_1, list_2):
     
-    x, res = get_stats(list_1,list_2)
-    print(x, res)
-    df_final.loc[(category, review), ("kappa score", "bootstrap")]=x
-    df_final.loc[(category, review), ("confidence interval low", "bootstrap")]=res.confidence_interval.low
-    df_final.loc[(category, review), ("confidence interval high",
-                                       "bootstrap")]=res.confidence_interval.high
-    df_final.loc[(category, review), ("standard error", "bootstrap")]=res.standard_error
+    # x, mean_, std_, low_, high_  = get_stats(list_1,list_2)
+    # df_final.loc[(category, review), ("kappa score", "bootstrap")]=x
+    # df_final.loc[(category, review), ("confidence interval low", "bootstrap")]=low_
+    # df_final.loc[(category, review), ("confidence interval high", "bootstrap")]=high_
+    # df_final.loc[(category, review), ("standard error", "bootstrap")]=std_
 
     matrix = create_matrix(list_1, list_2)
     kappa_cohen, low_cohen, high_cohen, se_cohen = confidence_interval(matrix, sd_cohen)
@@ -191,9 +171,34 @@ def write_stat(category, review, df_final, list_1, list_2):
     df_final.loc[(category, review), ("kappa score", "fleiss")]=kappa_fleiss
     df_final.loc[(category, review), ("confidence interval low", "fleiss")]=low_fleiss
     df_final.loc[(category, review), ("confidence interval high", "fleiss")]=high_fleiss
-    df_final.loc[(category, review), ("standard error", "fleiss")]=high_fleiss
+    df_final.loc[(category, review), ("standard error", "fleiss")]=se_fleiss
         
 
+
+
+
+# Enter the path to the tsv file with the rating from the first reviwer
+path_tsv = "/Users/camille.brianceau/aramis/reproducibility-reviews/annotations/annotations_elina2.tsv"
+df_rating_1 = pd.read_csv(path_tsv, sep = "\t", index_col=False, header= None)
+df_rating_1 = df_rating_1.dropna()
+
+# Enter the path to the tsv file with the rating from the second reviwer
+path_tsv = "/Users/camille.brianceau/aramis/reproducibility-reviews/annotations/annotations_olivier2.tsv"
+df_rating_2 = pd.read_csv(path_tsv, sep = "\t", index_col=False, header= None)
+df_rating_2 = df_rating_2.dropna()
+
+list_categories = [
+        "Models and algorithms",
+        # "Datasets",
+        # "Code",
+        # "Experimental results",
+        # "Error bars or statistical significance",
+        # "Statement",
+        # "Comments",
+        # "Meta-categories",
+    ]
+
+df_final = create_dataframe(list_categories)
 
 for category in range(len(list_categories)):
     all_reviews_1 = []
@@ -219,5 +224,6 @@ list_agreement_1 = df_rating_1.loc[2:, 29].values.tolist()
 list_agreement_2 = df_rating_2.loc[2:, 29].values.tolist()
 
 write_stat("Agreement", "all reviews", df_final, list_agreement_1, list_agreement_2)
+df_final.sort_index( ascending=True, inplace=True)
 print(df_final)
 df_final.to_csv("/Users/camille.brianceau/aramis/reproducibility-reviews/results.csv", index = True, sep="\t", encoding='utf-8')
