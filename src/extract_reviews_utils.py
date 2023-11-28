@@ -47,14 +47,18 @@ def get_accepted_paper_list(year: str = "2023"):
 
     return paper_list
 
-def extract_reviews(paper, category):
+def extract_reviews(paper, year,  category):
     
     # open html webpage and extract with BeautifulSoup
     reponse = urllib.request.urlopen(paper)
     contenu_web = reponse.read().decode('UTF-8')
     soup = BeautifulSoup(contenu_web, "html.parser")
 
-    paper_title = soup.find("title").get_text().rstrip("MICCAI 2023 - Accepted Papers an").rstrip(' |')
+    if year == "2023" :
+        paper_title = soup.find("title").get_text().rstrip("MICCAI 2023 - Accepted Papers, Reviews, Author Feedback").rstrip(' |')
+    elif year == "2022" :
+        paper_title = soup.find("title").get_text().rstrip("MICCAI 2022 - Accepted Papers and Reviews").rstrip(' |')
+
     paper_id = Path(paper).name[:13]
     text = list_review_text[category]
     repro_reviews_paragraph = soup.find_all(lambda tag: tag.name == "li" and text in tag.text)
@@ -92,7 +96,7 @@ def extract_reviews(paper, category):
 
     return reviews_df, statistics_df
 
-def extract_reproducibility_paragraph(paper_list):
+def extract_reproducibility_paragraph(paper_list, year):
     # Extract the reproducibility paragraph from the reviews and export as csv file
 
     df_stats =  pd.DataFrame(columns=columns_statistics)
@@ -102,7 +106,7 @@ def extract_reproducibility_paragraph(paper_list):
         print(paper)
         for category in list_categories_str:
 
-            reviews_df, statistics_df = extract_reviews(paper, category)
+            reviews_df, statistics_df = extract_reviews(paper, year, category)
             df_reviews = pd.concat([df_reviews, reviews_df])
             df_stats = pd.concat([df_stats, statistics_df])
 

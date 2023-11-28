@@ -49,7 +49,7 @@ def cli(
     if (not path_all_reviews.is_file()) or (not path_all_stats.is_file()):
 
         print(f"Extract reviews and count word for year {year}")
-        df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list)
+        df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list, year)
 
         df_all_reviews.to_csv(path_all_reviews, index = False, sep="\t", encoding='utf-8')
         df_all_stats.to_csv(path_all_stats, index = False, sep="\t", encoding='utf-8')
