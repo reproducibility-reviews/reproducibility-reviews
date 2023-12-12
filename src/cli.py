@@ -19,7 +19,7 @@ CONTEXT_SETTINGS = dict(
 
 def cli():
 
-    print("ok")
+    print()
 
 cli.add_command(extract_reviews_cli)
 cli.add_command(random_reviews_cli)

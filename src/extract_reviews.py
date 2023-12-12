@@ -5,13 +5,10 @@ from pathlib import Path
 import os
 from extract_reviews_utils import (
     get_accepted_paper_list, 
-    extract_reproducibility_paragraph,
+    extract_paragraph,
     count_total_words,
-    save_hist,
     get_repro_copy_paste,
-    resume,
     count_checklist,
-    create_rating_tsv,
     create_rating_excel,
 )
 
@@ -30,9 +27,27 @@ from extract_reviews_utils import (
     default = "results",
     type = click.Path(path_type=Path),
     )
+@click.option(
+    "--extract_copy_paste",
+    "-ecp",
+    help = "to extract the list of reproducibility reviews for which the content is a copy/paste of another category review.",
+    default = False,
+    type = bool,
+    is_flag = True,
+    )
+@click.option(
+    "--extract_checklist",
+    "-od",
+    help = "to extract the list of reproducibility reviews for which the content contain the word 'checklist'.",
+    default = False,
+    type = bool,
+    is_flag = True,
+    )
 def cli(
     year, 
     output_directory,
+    extract_copy_paste,
+    extract_checklist,
 ):
     """
     Source code is available on GitHub: https://github.com/reproducibility-reviews/reproducibility-reviews .
@@ -41,17 +56,22 @@ def cli(
     """
     paper_list = get_accepted_paper_list(year)
 
+    # create th output directory 
+    output_directory = Path(f"miccai{year}")
     if not output_directory.is_dir():
         os.mkdir(output_directory)
+    path_all_reviews = output_directory / 'reviews.csv'
+    path_all_stats = output_directory / 'count_words.csv'
+    path_all_scores = output_directory / 'scores.csv'
 
-    path_all_reviews = Path(output_directory) / 'all_reviews.csv'
-    path_all_stats = Path(output_directory) / 'all_stats.csv'
-
+   # extract 7 min  
     if (not path_all_reviews.is_file()) or (not path_all_stats.is_file()):
 
         print(f"Extract reviews and count word for year {year}")
-        df_all_reviews, df_all_stats = extract_reproducibility_paragraph(paper_list, year)
+        df_all_reviews, df_all_stats, df_all_scores = extract_paragraph(paper_list, year)
 
+
+        df_all_scores.to_csv(path_all_scores, index = True, sep="\t", encoding='utf-8')
         df_all_reviews.to_csv(path_all_reviews, index = True, sep="\t", encoding='utf-8')
         df_all_stats.to_csv(path_all_stats, index = True, sep="\t", encoding='utf-8')
 
@@ -62,24 +82,20 @@ def cli(
         df_all_reviews = pd.read_csv(path_all_reviews, sep= "\t",  header=[0, 1], index_col=[0,1], skip_blank_lines=True)
         df_all_stats = pd.read_csv(path_all_stats, sep= "\t",  header=[0, 1], index_col=[0,1], skip_blank_lines=True)
 
+
     print(f"Count total words")
     df_all_stats = count_total_words(df_all_stats=df_all_stats, output_directory=output_directory)
 
-    print(f"Creating histo")
-    save_hist(df_all_stats, output_directory)
+    if extract_copy_paste:
+        print(f"Count number of copy/paste")
+        get_repro_copy_paste(df_all_reviews=df_all_reviews, output_directory=output_directory)
 
-    print(f"Count number of copy/paste")
-    get_repro_copy_paste(df_all_reviews=df_all_reviews, output_directory=output_directory)
+    if extract_checklist:
+        print(f"Count checklist words in repro review")
+        count_checklist(df_all_reviews=df_all_reviews, output_directory=output_directory, category="reproducibility")
 
-    print(f"Create stats resume")
-    resume(df_all_stats, output_directory=output_directory)
-
-    print(f"Count checklist words in repro review")
-    count_checklist(df_all_reviews=df_all_reviews, output_directory=output_directory, category="repro")
-
-    print("create ratin tsv file")
-    create_rating_excel(df_all_reviews= df_all_reviews, output_directory= output_directory)
+    print("Create rating excel file")
+    create_rating_excel(df_all_reviews= df_all_reviews, year_=year, output_directory= output_directory)
     
-
 if __name__ == "__main__":
     cli()
