@@ -1,0 +1,421 @@
+\documentclass{article}
+
+\usepackage{float}
+
+\title{Rating analysis}
+
+\begin{document}
+
+\maketitle
+
+This notebook analyzes the 3 reviews of the 90 different accepted papers at MICCAI 2023.
+
+\section{Categories} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ For 270 reviews                        &   number &   percent &   ci low &   ci high \\
+\hline
+ Models and algorithms                  &       78 &     28.89 &    23.33 &     34.46 \\
+ Datasets                               &       90 &     33.33 &    27.78 &     39.26 \\
+ Code                                   &      126 &     46.67 &    40.74 &     52.59 \\
+ Experimental results                   &       69 &     25.56 &    20.74 &     30.74 \\
+ Error bars or statistical significance &        5 &      1.85 &     0.37 &      3.7  \\
+ Code is or will be available           &       63 &     23.33 &    18.15 &     28.15 \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\section{Statements} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ For 270 reviews         &   number &   percent &   ci low &   ci high \\
+\hline
+ 3. (+) statement        &      132 &     48.89 &    42.96 &     55.19 \\
+ 2. (-) statement        &       32 &     11.85 &     7.78 &     15.93 \\
+ 1. (none) statement     &      100 &     37.04 &    31.48 &     42.96 \\
+ 0. Unusable (statement) &        6 &      2.22 &     0.74 &      4.07 \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 2} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrr}
+\hline
+                         &   3. (+) statement &   2. (-) statement  &   1. (none) statement &   0. Unusable (statement) &   total \\
+\hline
+ 3. (+) statement        &              18.89 &               10    &                 18.89 &                      0    &   47.78 \\
+ 2. (-) statement        &               6.67 &                2.22 &                  4.44 &                      0    &   13.33 \\
+ 1. (none) statement     &              20    &                0    &                 16.67 &                      1.11 &   37.78 \\
+ 0. Unusable (statement) &               0    &                1.11 &                  0    &                      0    &    1.11 \\
+ total                   &              45.56 &               13.33 &                 40    &                      1.11 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 2 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrr}
+\hline
+                         &   3. (+) statement &   2. (-) statement  &   1. (none) statement &   0. Unusable (statement) &   total \\
+\hline
+ 3. (+) statement        &              25.56 &                4.44 &                 13.33 &                      2.22 &   45.56 \\
+ 2. (-) statement        &               5.56 &                1.11 &                  6.67 &                      0    &   13.33 \\
+ 1. (none) statement     &              21.11 &                3.33 &                 13.33 &                      2.22 &   40    \\
+ 0. Unusable (statement) &               1.11 &                0    &                  0    &                      0    &    1.11 \\
+ total                   &              53.33 &                8.89 &                 33.33 &                      4.44 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrr}
+\hline
+                         &   3. (+) statement &   2. (-) statement  &   1. (none) statement &   0. Unusable (statement) &   total \\
+\hline
+ 3. (+) statement        &              21.11 &                5.56 &                 21.11 &                      0    &   47.78 \\
+ 2. (-) statement        &               5.56 &                1.11 &                  4.44 &                      2.22 &   13.33 \\
+ 1. (none) statement     &              25.56 &                2.22 &                  7.78 &                      2.22 &   37.78 \\
+ 0. Unusable (statement) &               1.11 &                0    &                  0    &                      0    &    1.11 \\
+ total                   &              53.33 &                8.89 &                 33.33 &                      4.44 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\section{Comments} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ For 270 reviews        &   number &   percent &   ci low &   ci high \\
+\hline
+ 4. (-/+) comments      &       62 &     22.96 &    17.78 &     27.78 \\
+ 3. (+) comments        &       83 &     30.74 &    25.56 &     36.3  \\
+ 2. (-) comments        &       50 &     18.52 &    13.7  &     23.33 \\
+ 1. (none) comments     &       60 &     22.22 &    17.41 &     27.04 \\
+ 0. Unusable (comments) &       15 &      5.56 &     2.96 &      8.52 \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 2} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrr}
+\hline
+                        &   4. (-/+) comments &   3. (+) comments &   2. (-) comments &   1. (none) comments &   0. Unusable (comments) &   total \\
+\hline
+ 4. (-/+) comments      &                4.44 &              7.78 &              4.44 &                 7.78 &                     1.11 &   25.56 \\
+ 3. (+) comments        &                6.67 &              8.89 &              4.44 &                 6.67 &                     1.11 &   27.78 \\
+ 2. (-) comments        &                4.44 &              6.67 &              5.56 &                 4.44 &                     0    &   21.11 \\
+ 1. (none) comments     &                2.22 &              7.78 &              5.56 &                 4.44 &                     2.22 &   22.22 \\
+ 0. Unusable (comments) &                0    &              1.11 &              2.22 &                 0    &                     0    &    3.33 \\
+ total                  &               17.78 &             32.22 &             22.22 &                23.33 &                     4.44 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 2 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrr}
+\hline
+                        &   4. (-/+) comments &   3. (+) comments &   2. (-) comments &   1. (none) comments &   0. Unusable (comments) &   total \\
+\hline
+ 4. (-/+) comments      &               10    &              2.22 &              1.11 &                 4.44 &                     0    &   17.78 \\
+ 3. (+) comments        &                4.44 &             14.44 &              2.22 &                 6.67 &                     4.44 &   32.22 \\
+ 2. (-) comments        &                5.56 &              5.56 &              3.33 &                 4.44 &                     3.33 &   22.22 \\
+ 1. (none) comments     &                2.22 &             10    &              5.56 &                 4.44 &                     1.11 &   23.33 \\
+ 0. Unusable (comments) &                3.33 &              0    &              0    &                 1.11 &                     0    &    4.44 \\
+ total                  &               25.56 &             32.22 &             12.22 &                21.11 &                     8.89 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrr}
+\hline
+                        &   4. (-/+) comments &   3. (+) comments &   2. (-) comments &   1. (none) comments &   0. Unusable (comments) &   total \\
+\hline
+ 4. (-/+) comments      &                4.44 &              7.78 &              3.33 &                 6.67 &                     3.33 &   25.56 \\
+ 3. (+) comments        &                8.89 &             11.11 &              2.22 &                 3.33 &                     2.22 &   27.78 \\
+ 2. (-) comments        &                5.56 &              4.44 &              3.33 &                 5.56 &                     2.22 &   21.11 \\
+ 1. (none) comments     &                6.67 &              6.67 &              3.33 &                 5.56 &                     0    &   22.22 \\
+ 0. Unusable (comments) &                0    &              2.22 &              0    &                 0    &                     1.11 &    3.33 \\
+ total                  &               25.56 &             32.22 &             12.22 &                21.11 &                     8.89 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\section{Statements VS comments} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrr}
+\hline
+ in \%                    &   4. (-/+) comments &   3. (+) comments &   2. (-) comments &   1. (none) comments &   0. Unusable (comments) &   total \\
+\hline
+ 3. (+) statement        &                  21 &                52 &                 7 &                   52 &                        0 &     132 \\
+ 2. (-) statement        &                   8 &                 0 &                21 &                    3 &                        0 &      32 \\
+ 1. (none) statement     &                  33 &                31 &                22 &                    5 &                        9 &     100 \\
+ 0. Unusable (statement) &                   0 &                 0 &                 0 &                    0 &                        6 &       6 \\
+ total                   &                  62 &                83 &                50 &                   60 &                       15 &     270 \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrr}
+\hline
+ in \%                    &   4. (-/+) comments &   3. (+) comments &   2. (-) comments &   1. (none) comments &   0. Unusable (comments) &   total \\
+\hline
+ 3. (+) statement        &                7.78 &             19.26 &              2.59 &                19.26 &                     0    &   48.89 \\
+ 2. (-) statement        &                2.96 &              0    &              7.78 &                 1.11 &                     0    &   11.85 \\
+ 1. (none) statement     &               12.22 &             11.48 &              8.15 &                 1.85 &                     3.33 &   37.04 \\
+ 0. Unusable (statement) &                0    &              0    &              0    &                 0    &                     2.22 &    2.22 \\
+ total                   &               22.96 &             30.74 &             18.52 &                22.22 &                     5.56 &  100    \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\section{Meta categories} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ For 270 reviews   &   number &   percent &   ci low &   ci high \\
+\hline
+ (+) meta          &      163 &     60.37 &    54.44 &     65.93 \\
+ (-) meta          &       87 &     32.22 &    26.67 &     38.15 \\
+ Unusable (meta)   &       20 &      7.41 &     4.44 &     10.74 \\
+\hline
+\end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 2} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
+\hline
+ (+) meta        &      33.33 &      23.33 &              3.33 &   60    \\
+ (-) meta        &      22.22 &      10    &              1.11 &   33.33 \\
+ Unusable (meta) &       3.33 &       2.22 &              1.11 &    6.67 \\
+ total           &      58.89 &      35.56 &              5.56 &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 2 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
+\hline
+ (+) meta        &      40    &      12.22 &              6.67 &   58.89 \\
+ (-) meta        &      18.89 &      13.33 &              3.33 &   35.56 \\
+ Unusable (meta) &       3.33 &       2.22 &              0    &    5.56 \\
+ total           &      62.22 &      27.78 &             10    &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\subsection{Review 1 VS review 3} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
+\hline
+ (+) meta        &      38.89 &      18.89 &              2.22 &   60    \\
+ (-) meta        &      18.89 &       7.78 &              6.67 &   33.33 \\
+ Unusable (meta) &       4.44 &       1.11 &              1.11 &    6.67 \\
+ total           &      62.22 &      27.78 &             10    &  100    \\
+\hline
+\end{tabular}\caption{Confusion matrix in percent}
+
+\end{table}
+
+
+
+\section{Agreement} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ For 90 papers   &   number &   percent &   ci low &   ci high \\
+\hline
+ Agreement       &       32 &     35.56 &    25.56 &     45.56 \\
+ Disagreement    &       56 &     62.22 &    52.22 &     72.22 \\
+ Unusable        &        2 &      2.22 &     0    &      5.56 \\
+\hline
+\end{tabular}\caption{Satistics about whether or not the reviewers agreed on the reproducibility of the paper.}
+
+\end{table}
+
+
+
+\section{Kappa Fleiss} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrr}
+\hline
+ kappa fleiss    &   kappa &   ci low &   ci high \\
+\hline
+ Statements      &   -0.05 &    -0.14 &      0.03 \\
+ Comments        &    0.05 &    -0.03 &      0.12 \\
+ Meta-categories &    0.02 &    -0.08 &      0.13 \\
+\hline
+\end{tabular}\caption{Kappa Fleiss for multi rating (3 reviewers).}
+
+\end{table}
+
+
+
+\section{Code Review} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ code availableness (in \%)   &   good link &   empty link &   no link &   total \\
+\hline
+ 0                           &           6 &            2 &         4 &      12 \\
+ 1                           &          37 &           16 &        25 &      78 \\
+ total                       &          43 &           18 &        29 &      90 \\
+\hline
+\end{tabular}\caption{The table above indicates, for each paper if at least one reviewer said that the 
+ code was/will be available (1) or not (0), and whether the link was present and non-empty (good link), 
+ present by with empty repository (empty link) or whether there was no link (no link).}
+
+\end{table}
+
+
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrr}
+\hline
+ code availableness (in \%)   &   good link &   empty link &   no link &   total \\
+\hline
+ 0                           &        6.67 &         2.22 &      4.44 &   13.33 \\
+ 1                           &       41.11 &        17.78 &     27.78 &   86.67 \\
+ total                       &       47.78 &        20    &     32.22 &  100    \\
+\hline
+\end{tabular}\caption{The table above indicates, for each paper if at least one reviewer said that the 
+ code was/will be available (1) or not (0), and whether the link was present and non-empty (good link), 
+ present by with empty repository (empty link) or whether there was no link (no link).}
+
+\end{table}
+
+
+
+\end{document}

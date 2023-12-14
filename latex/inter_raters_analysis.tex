@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{float}
+
+\title{Inter raters analysis}
+
+\begin{document}
+
+\maketitle
+
+\section{Kappa table} 
+
+\begin{table}[H]
+
+\centering
+
+\begin{tabular}{lrrrrrrrrrr}
+\hline
+                                        &   ('ci high', 'bootstrap') &   ('ci high', 'cohen') &   ('ci low', 'bootstrap') &   ('ci low', 'cohen') &   ('kappa score', 'bootstrap') &   ('kappa score', 'cohen') &   ('kappa score', 'fleiss') &   ('kappa score', 'sklearn') &   ('se', 'bootstrap') &   ('se', 'cohen') \\
+\hline
+ Models and algorithms                  &                   0.837329 &               0.84415  &                  0.655045 &              0.664666 &                       0.753781 &                   0.754408 &                    0.753788 &                     0.754408 &             0.0458126 &         0.0457868 \\
+ Datasets                               &                   0.959496 &               0.961497 &                  0.849734 &              0.855678 &                       0.907146 &                   0.908587 &                    0.908586 &                     0.908587 &             0.0282871 &         0.0269947 \\
+ Code                                   &                   0.955497 &               0.960097 &                  0.858582 &              0.861332 &                       0.910915 &                   0.910714 &                    0.910714 &                     0.910714 &             0.0248568 &         0.0251953 \\
+ Experimental results                   &                   0.926379 &               0.933235 &                  0.785722 &              0.794215 &                       0.862517 &                   0.863725 &                    0.863725 &                     0.863725 &             0.0363155 &         0.0354642 \\
+ Error bars or statistical significance &                 nan        &               1        &                nan        &              1        &                     nan        &                   1        &                    1        &                     1        &           nan         &         0         \\
+ Code is or will be available           &                   0.926661 &               0.938408 &                  0.788583 &              0.799299 &                       0.865373 &                   0.868854 &                    0.866796 &                     0.866798 &             0.035529  &         0.035487  \\
+ Statement                              &                   0.803951 &               0.808085 &                  0.664537 &              0.665879 &                       0.736192 &                   0.736982 &                    0.736822 &                     0.736982 &             0.0355966 &         0.036277  \\
+ Comments                               &                   0.867848 &               0.869944 &                  0.757056 &              0.761243 &                       0.816098 &                   0.815594 &                    0.815579 &                     0.815594 &             0.0274419 &         0.0277298 \\
+ Meta-categories                        &                   0.866585 &               0.871046 &                  0.729089 &              0.73176  &                       0.801467 &                   0.801403 &                    0.801385 &                     0.801403 &             0.034113  &         0.035532  \\
+ Agreement                              &                   0.769367 &               0.796079 &                  0.442378 &              0.469976 &                       0.628534 &                   0.633028 &                    0.632137 &                     0.633028 &             0.0811484 &         0.0831894 \\
+ Repo provided                          &                   1        &               1        &                  1        &              1        &                       1        &                   1        &                    1        &                     1        &             0         &         0         \\
+\hline
+\end{tabular}\caption{Different method to calculate the kappa scores with confidence intervals and standard errors}
+
+\end{table}
+
+
+
+\end{document}
