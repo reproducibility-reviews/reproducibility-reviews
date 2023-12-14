@@ -20,12 +20,12 @@ This notebook analyzes the 3 reviews of the 90 different accepted papers at MICC
 \hline
  For 270 reviews                        &   number &   percent &   ci low &   ci high \\
 \hline
- Models and algorithms                  &       66 &     24.44 &    19.26 &     29.63 \\
- Datasets                               &       91 &     33.7  &    28.15 &     39.26 \\
- Code                                   &      126 &     46.67 &    40.91 &     52.59 \\
- Experimental results                   &       69 &     25.56 &    20.74 &     30.74 \\
+ Models and algorithms                  &       66 &     24.44 &    19.63 &     29.65 \\
+ Datasets                               &       91 &     33.7  &    27.41 &     39.28 \\
+ Code                                   &      126 &     46.67 &    40.54 &     52.59 \\
+ Experimental results                   &       69 &     25.56 &    20.37 &     30.74 \\
  Error bars or statistical significance &        5 &      1.85 &     0.37 &      3.7  \\
- Code is or will be available           &       62 &     22.96 &    18.15 &     28.15 \\
+ Code is or will be available           &       62 &     22.96 &    17.58 &     28.15 \\
 \hline
 \end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
 
@@ -43,9 +43,9 @@ This notebook analyzes the 3 reviews of the 90 different accepted papers at MICC
 \hline
  For 270 reviews         &   number &   percent &   ci low &   ci high \\
 \hline
- 3. (+) statement        &      124 &     45.93 &    40    &     51.5  \\
- 2. (-) statement        &       31 &     11.48 &     7.41 &     15.56 \\
- 1. (none) statement     &      103 &     38.15 &    32.22 &     43.7  \\
+ 3. (+) statement        &      124 &     45.93 &    40    &     51.85 \\
+ 2. (-) statement        &       31 &     11.48 &     7.78 &     15.56 \\
+ 1. (none) statement     &      103 &     38.15 &    32.02 &     43.7  \\
  0. Unusable (statement) &       12 &      4.44 &     2.22 &      7.04 \\
 \hline
 \end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
@@ -56,7 +56,7 @@ This notebook analyzes the 3 reviews of the 90 different accepted papers at MICC
 
 kappa fleiss: -0.06679764243614937
 
-confidence intervals (bootstrap): [-0.14\%, 0.01\%]
+confidence intervals (bootstrap): [-0.15\%, 0.00\%]
 
 \subsection{Review 1 VS review 2} 
 
@@ -134,10 +134,10 @@ confidence intervals (bootstrap): [-0.14\%, 0.01\%]
 \hline
  For 270 reviews        &   number &   percent &   ci low &   ci high \\
 \hline
- 4. (-/+) comments      &       62 &     22.96 &    18.15 &     28.17 \\
- 3. (+) comments        &       86 &     31.85 &    26.09 &     37.04 \\
+ 4. (-/+) comments      &       62 &     22.96 &    17.95 &     28.15 \\
+ 3. (+) comments        &       86 &     31.85 &    26.67 &     37.78 \\
  2. (-) comments        &       50 &     18.52 &    14.07 &     23.33 \\
- 1. (none) comments     &       60 &     22.22 &    17.04 &     27.04 \\
+ 1. (none) comments     &       60 &     22.22 &    17.41 &     27.06 \\
  0. Unusable (comments) &       12 &      4.44 &     2.22 &      7.04 \\
 \hline
 \end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
@@ -271,9 +271,9 @@ confidence intervals (bootstrap): [-0.03\%, 0.13\%]
 \hline
  For 270 reviews   &   number &   percent &   ci low &   ci high \\
 \hline
- Reproducible      &      166 &     61.48 &    55.56 &     66.67 \\
- Irreproducible    &       85 &     31.48 &    25.93 &     37.04 \\
- Unusable          &       19 &      7.04 &     4.07 &     10.37 \\
+ (+) meta          &        0 &         0 &        0 &         0 \\
+ (-) meta          &        0 &         0 &        0 &         0 \\
+ Unusable (meta)   &        0 &         0 &        0 &         0 \\
 \hline
 \end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
 
@@ -283,7 +283,7 @@ confidence intervals (bootstrap): [-0.03\%, 0.13\%]
 
 kappa fleiss: 0.006038455426664452
 
-confidence intervals (bootstrap): [-0.11\%, 0.12\%]
+confidence intervals (bootstrap): [-0.11\%, 0.11\%]
 
 \subsection{Review 1 VS review 2} 
 
@@ -293,12 +293,12 @@ confidence intervals (bootstrap): [-0.11\%, 0.12\%]
 
 \begin{tabular}{lrrrr}
 \hline
-                &   Reproducible &   Irreproducible &   Unusable &   total \\
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
 \hline
- Reproducible   &          36.67 &            18.89 &       3.33 &   58.89 \\
- Irreproducible &          26.67 &             8.89 &       1.11 &   36.67 \\
- Unusable       &           0    &             2.22 &       2.22 &    4.44 \\
- total          &          63.33 &            30    &       6.67 &  100    \\
+ (+) meta        &          0 &          0 &                 0 &       0 \\
+ (-) meta        &          0 &          0 &                 0 &       0 \\
+ Unusable (meta) &          0 &          0 &                 0 &       0 \\
+ total           &          0 &          0 &                 0 &       0 \\
 \hline
 \end{tabular}\caption{Confusion matrix in percent}
 
@@ -314,12 +314,12 @@ confidence intervals (bootstrap): [-0.11\%, 0.12\%]
 
 \begin{tabular}{lrrrr}
 \hline
-                &   Reproducible &   Irreproducible &   Unusable &   total \\
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
 \hline
- Reproducible   &          41.11 &            16.67 &       5.56 &   63.33 \\
- Irreproducible &          18.89 &             7.78 &       3.33 &   30    \\
- Unusable       &           2.22 &             3.33 &       1.11 &    6.67 \\
- total          &          62.22 &            27.78 &      10    &  100    \\
+ (+) meta        &          0 &          0 &                 0 &       0 \\
+ (-) meta        &          0 &          0 &                 0 &       0 \\
+ Unusable (meta) &          0 &          0 &                 0 &       0 \\
+ total           &          0 &          0 &                 0 &       0 \\
 \hline
 \end{tabular}\caption{Confusion matrix in percent}
 
@@ -335,12 +335,12 @@ confidence intervals (bootstrap): [-0.11\%, 0.12\%]
 
 \begin{tabular}{lrrrr}
 \hline
-                &   Reproducible &   Irreproducible &   Unusable &   total \\
+                 &   (+) meta &   (-) meta &   Unusable (meta) &   total \\
 \hline
- Reproducible   &          36.67 &            17.78 &       4.44 &   58.89 \\
- Irreproducible &          22.22 &            10    &       4.44 &   36.67 \\
- Unusable       &           3.33 &             0    &       1.11 &    4.44 \\
- total          &          62.22 &            27.78 &      10    &  100    \\
+ (+) meta        &          0 &          0 &                 0 &       0 \\
+ (-) meta        &          0 &          0 &                 0 &       0 \\
+ Unusable (meta) &          0 &          0 &                 0 &       0 \\
+ total           &          0 &          0 &                 0 &       0 \\
 \hline
 \end{tabular}\caption{Confusion matrix in percent}
 
@@ -358,8 +358,8 @@ confidence intervals (bootstrap): [-0.11\%, 0.12\%]
 \hline
  For 90 reviews   &   number &   percent &   ci low &   ci high \\
 \hline
- Agreement        &       27 &     30    &    21.11 &     38.94 \\
- Disagreement     &       59 &     65.56 &    55.56 &     74.44 \\
+ Agreement        &       27 &     30    &    21.11 &     40    \\
+ Disagreement     &       59 &     65.56 &    54.95 &     75.56 \\
  Unusable         &        4 &      4.44 &     1.11 &      8.89 \\
 \hline
 \end{tabular}\caption{Percent of reviewers that have commented on at least one of the items of the category}
