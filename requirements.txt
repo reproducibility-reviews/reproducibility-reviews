@@ -6,3 +6,4 @@ click
 matplotlib
 jupyter
 tabulate
+statsmodels
