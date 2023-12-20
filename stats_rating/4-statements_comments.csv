@@ -1,0 +1,6 @@
+number;4. (-/+) comments;3. (+) comments;2. (-) comments;1. (none) comments;0. Unusable (comments);total
+3. (+) statement;21.0;52.0;7.0;52.0;0.0;132.0
+2. (-) statement ;8.0;0.0;21.0;3.0;0.0;32.0
+1. (none) statement;33.0;31.0;22.0;5.0;9.0;100.0
+0. Unusable (statement);0.0;0.0;0.0;0.0;6.0;6.0
+total;62.0;83.0;50.0;60.0;15.0;270.0
