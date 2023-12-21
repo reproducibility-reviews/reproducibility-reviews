@@ -5,11 +5,11 @@ This repository aims to reproduce the results described in the following [paper]
 These results correspond to an analysis of the reproducibility section of the reviews of the [MICCAI 2023 conference](https://conferences.miccai.org/2023/papers/).
 
 The results were obtained as follows:
-- automatically extracting the reviews of papers accepted at MICCAI (presented as a [Jupyter notebook](#Extracting-the-reviews))
-- computing statistics (e.g. word counts) on the reviews themselves (NOT on the human ratings of the reviews) (presented as a [Jupyter notebook](#Statistics-on-the reviews))
-- (human rating)[#Human-rating-of-the-reviews] of the reviews as described in the paper
+- [automatically extracting](#Extracting-the-reviews) the reviews of papers accepted at MICCAI
+- [computing statistics](#Statistics-on-the-reviews) (e.g. word counts) on the reviews themselves (NOT on the human ratings of the reviews)
+- [human rating](#Human-rating-of-the-reviews) of the reviews as described in the paper
 - analyzing inter-rater reliability (presented as a [Jupyter notebook](#Inter-rater-reliability))
-- analyzing the results of the human ratings (presented as a [Jupyter notebook](#Analyzing-the-ratings))
+- [analyzing the results of the human ratings](#Analyzing-the-ratings)
 - [generating LaTeX](generate-latex) tables that were used in the paper or in the supplementary material 
 
 ## Citation
