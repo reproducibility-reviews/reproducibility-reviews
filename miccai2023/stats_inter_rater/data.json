@@ -1,8 +1,8 @@
 {
-    "nb_papers": 92,
-    "nb_reviews": 276,
+    "nb_papers": 90.0,
+    "nb_reviews": 270,
     "date": "2023-12-21",
-    "time": "2023-12-21 10:29:22.875250",
-    "path_rater_1": "../human_rating/rating_90/rating_90_O.csv",
-    "path_rater_2": "../human_rating/rating_90/rating_90_E.csv"
+    "time": "2023-12-21 13:49:02.478585",
+    "data_path1": "../human_rating/rating_90/rating_90_O.csv",
+    "data_path2": "../human_rating/rating_90/rating_90_E.csv"
 }
