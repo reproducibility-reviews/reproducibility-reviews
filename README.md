@@ -6,7 +6,7 @@ These results correspond to an analysis of the reproducibility section of the re
 
 The results were obtained as follows:
 - [automatically extracting](#Extracting-the-reviews) the reviews of papers accepted at MICCAI
-- [computing statistics](#Statistics-on-the-reviews) (e.g. word counts) on the reviews themselves (NOT on the human ratings of the reviews)
+- [computing statistics regarding the reviews themselves](#Statistics-on-the-reviews) (e.g. word counts) (NOT on the human ratings of the reviews)
 - [human rating](#Human-rating-of-the-reviews) of the reviews as described in the paper
 - [analyzing inter-rater reliability](#Inter-rater-reliability)
 - [analyzing the results of the human ratings](#Analyzing-the-ratings)
