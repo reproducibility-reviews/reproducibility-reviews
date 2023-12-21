@@ -59,7 +59,9 @@ In addition, the notebook outputs histograms of word counts as png files in the 
 
 Files related to human rating are within the `human_rating` directory.
 
-As outlined in the paper, two raters evaluated the reviews of 90 papers (270 reviews). Their ratings are available in the files `rating_90/rating_90_{O,E}.csv`.
+The instructions given to the raters (rating guidelines) are available in this [PDF](human_rating/rating_guidelines.pdf) file.
+
+As outlined in the paper, two raters evaluated the reviews of 90 papers (270 reviews). Their ratings are available in the files `rating_90/rating_90_{E,O}.csv`.
 
 If you wish to perform your own ratings of the reviews. Please follow these steps:
 - Take the extracted reviews which are available in `reviews_reproducibility_YYYY.xlsx`.
