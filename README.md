@@ -8,7 +8,7 @@ The results were obtained as follows:
 - [automatically extracting](#Extracting-the-reviews) the reviews of papers accepted at MICCAI
 - [computing statistics](#Statistics-on-the-reviews) (e.g. word counts) on the reviews themselves (NOT on the human ratings of the reviews)
 - [human rating](#Human-rating-of-the-reviews) of the reviews as described in the paper
-- analyzing inter-rater reliability (presented as a [Jupyter notebook](#Inter-rater-reliability))
+- [analyzing inter-rater reliability](#Inter-rater-reliability)
 - [analyzing the results of the human ratings](#Analyzing-the-ratings)
 - [generating LaTeX](generate-latex) tables that were used in the paper or in the supplementary material 
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## Extracting the reviews
 
-You need to run the notebook `0. extract_reviews.ipynb` to extract the reviews of papers accepted at MICCAI conferences. By default, reviews from 2023 are extracted but you can change it to 2022. Note that we extract only the first 3 reviews for each paper to have a constant number of reviews in the analysis.
+The reviews from MICCAI 2023 have already been extracted. If you wish, you may redo the extraction with the notebook `0. extract_reviews.ipynb`. This extracts the reviews of papers accepted at MICCAI conferences. By default, reviews from 2023 are extracted but you can change it to 2022. Note that we extract only the first 3 reviews for each paper to have a constant number of reviews in the analysis.
 
 ### Output files
 
