@@ -14,7 +14,7 @@ The results were obtained as follows:
 
 ## Citation
 
-Colliot O, Thibeau-Sutre E, Brianceau C and Burgos N, Reproducibility in medical image computing: what is it and how is it assessed?
+Colliot O, Thibeau-Sutre E, Brianceau C and Burgos N, Reproducibility in medical image computing: what is it and how is it assessed?, Preprint, https://openreview.net/forum?id=3fIXW9mFfn
 
 ## Getting started
 
